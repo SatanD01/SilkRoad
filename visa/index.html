@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta charset="UTF-8">
+    <title>Виза в Узбекистан</title>
+    <!--  links  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="../css/style.css">
+
+    <!--  scripts  -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://kit.fontawesome.com/d46c800a71.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="../js/script.js"></script>
+</head>
+<body>
+
+<div class="menu">
+    <div class="d-flex flex-column">
+        <div class="menu-exit p-4">
+            <a href="../index.html" class="font-light h3">Logo</a>
+            <i class="fa-solid fa-xmark"></i>
+        </div>
+        <div class="menu-items d-flex flex-column">
+            <a href="../index.html" class="m-item text-18 font-light px-4 py-2">Главная</a>
+            <a href="../tours/tours.html" class="m-item text-18 font-light px-4 py-2">Туры</a>
+            <div class="m-item accordion accordion-flush" id="accordionFlushExample">
+                <div class="accordion-item">
+                    <span class="accordion-header" id="flush-headingOne">
+                        <button class="text-18 px-4 py-2 shadow-none bor-none p-0 font-light accordion-button collapsed"
+                                type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne"
+                                aria-expanded="false" aria-controls="flush-collapseOne">
+                            Направления
+                        </button>
+                    </span>
+                    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                         data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body d-flex p-0 flex-column">
+                            <div class="accordion-item">
+                                <span class="accordion-header" id="hotels-headingOne">
+                                    <button class="text-18 px-4 py-2 shadow-none bor-none p-0 font-light accordion-button collapsed"
+                                            type="button" data-bs-toggle="collapse" data-bs-target="#hotels-collapseOne"
+                                            aria-expanded="false" aria-controls="hotels-collapseOne">
+                                        Отели Узбекистана
+                                    </button>
+                                </span>
+                                <div id="hotels-collapseOne" class="accordion-collapse collapse"
+                                     aria-labelledby="hotels-headingOne" data-bs-parent="#hotelsFlushExample">
+                                    <div class="accordion-body d-flex p-0 flex-column">
+                                        <a class="m-item text-18 font-light px-4 ps-5 py-2"
+                                           href="../hotels/tashkent.html">Отели Ташкента</a>
+                                        <a class="m-item text-18 font-light px-4 ps-5 py-2"
+                                           href="../hotels/tashkent.html">Отели Самарканда</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <span class="accordion-header" id="attr-headingOne">
+                                    <button class="text-18 px-4 py-2 shadow-none bor-none p-0 font-light accordion-button collapsed"
+                                            type="button" data-bs-toggle="collapse" data-bs-target="#attr-collapseOne"
+                                            aria-expanded="false" aria-controls="attr-collapseOne">
+                                        Достопримечательности Узбекистана
+                                    </button>
+                                </span>
+                                <div id="attr-collapseOne" class="accordion-collapse collapse"
+                                     aria-labelledby="attr-headingOne" data-bs-parent="#attrFlushExample">
+                                    <div class="accordion-body d-flex p-0 flex-column">
+                                        <a class="m-item text-18 font-light px-4 ps-5 py-2"
+                                           href="../attraction/tashkent.html">Достопримечательности
+                                            Ташкента</a>
+                                        <a class="m-item text-18 font-light px-4 ps-5 py-2"
+                                           href="../attraction/tashkent.html">Достопримечательности
+                                            Самарканда</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="m-item text-18 font-light px-4 ps-5 py-2" href="#">Виза в Узбекистан</a>
+                            <a class="m-item text-18 font-light px-4 ps-5 py-2" href="../kitchen/index.html">Национальная кухня</a>
+                            <a class="m-item text-18 font-light px-4 ps-5 py-2" href="../posol/index.html">Посольства Узбекистана</a>
+                            <a class="m-item text-18 font-light px-4 ps-5 py-2" href="../fauna/index.html">Флора и Фауна</a>
+                            <a class="m-item text-18 font-light px-4 ps-5 py-2" href="../control/index.html">Таможенные правила</a>
+                            <a class="m-item text-18 font-light px-4 ps-5 py-2" href="#">Пограничные пункты</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="m-item text-18 font-light px-4 py-2">Транспорт</a>
+            <a href="#" class="m-item text-18 font-light px-4 py-2">Блог</a>
+            <a href="#" class="m-item text-18 font-light px-4 py-2">Галерея</a>
+            <a href="#" class="m-item text-18 font-light px-4 py-2">О нас</a>
+            <a href="#" class="m-item text-18 font-light px-4 py-2">Контакты</a>
+        </div>
+    </div>
+</div>
+
+<header class="bg-black">
+    <div class="container py-3 d-flex justify-content-between align-items-center">
+        <a href="../index.html" class="text-18 color-gold">
+            Logo
+        </a>
+        <div class="menu-btn">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <div class="nav-header d-flex align-items-center">
+            <a href="../index.html" class="br-r text-14 color-white">Главная</a>
+            <a href="../tours/tours.html" class="br-r text-14 color-white">Туры</a>
+            <div class="nav-dd dropdown">
+                <a href="#" class="br-r text-14 color-white dropdown-toggle" data-bs-toggle="dropdown" role="button"
+                   data-bs-auto-close="outside" aria-expanded="false">Направления</a>
+                <ul class="dropdown-menu bg-black bor-rad-1 p-2">
+                    <li class="btn-group dropend">
+                        <button type="button"
+                                class="btn dropdown-item shadow-none bor-none dropdown-toggle hover-gold bg-black"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                            Гостиницы Узбекистана
+                        </button>
+                        <ul class="dropdown-menu bg-black bor-rad-1 p-2">
+                            <li><a class="dropdown-item color-white hover-gold bg-black" href="../hotels/tashkent.html">Гостиница
+                                Ташкента</a></li>
+                            <li><a class="dropdown-item color-white hover-gold bg-black" href="../hotels/tashkent.html">Гостиница
+                                Самарканда</a></li>
+                            <li><a class="dropdown-item color-white hover-gold bg-black" href="../hotels/tashkent.html">Гостиница
+                                Бухары</a></li>
+                        </ul>
+                    </li>
+                    <li class="btn-group dropend">
+                        <button type="button"
+                                class="btn dropdown-item shadow-none bor-none dropdown-toggle hover-gold bg-black"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                            Достопримечательности
+                        </button>
+                        <ul class="dropdown-menu bg-black bor-rad-1 p-2">
+                            <li><a class="dropdown-item color-white hover-gold bg-black"
+                                   href="../attraction/tashkent.html">Достопримечательности
+                                Ташкента</a></li>
+                            <li><a class="dropdown-item color-white hover-gold bg-black"
+                                   href="../attraction/tashkent.html">Достопримечательности
+                                Самарканда</a></li>
+                            <li><a class="dropdown-item color-white hover-gold bg-black"
+                                   href="../attraction/tashkent.html">Достопримечательности
+                                Бухары</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="dropdown-item color-white hover-gold bg-black" href="#">Виза в Узбекистан</a></li>
+                    <li><a class="dropdown-item color-white hover-gold bg-black" href="../kitchen/index.html">Национальная кухня</a></li>
+                    <li><a class="dropdown-item color-white hover-gold bg-black" href="../posol/index.html">Посольства Узбекистана</a>
+                    </li>
+                    <li><a class="dropdown-item color-white hover-gold bg-black" href="../fauna/index.html">Флора и Фауна</a></li>
+                    <li><a class="dropdown-item color-white hover-gold bg-black" href="../control/index.html">Таможенные правила</a></li>
+                    <li><a class="dropdown-item color-white hover-gold bg-black" href="#">Пограничные пункты</a></li>
+                </ul>
+            </div>
+            <a href="#" class="br-r text-14 color-white">Транспорт</a>
+            <a href="#" class="br-r text-14 color-white">Блог</a>
+            <a href="#" class="br-r text-14 color-white">Галерея</a>
+            <a href="#" class="br-r text-14 color-white">О нас</a>
+            <a href="#" class="br-r text-14 color-white">Контакты</a>
+        </div>
+    </div>
+</header>
+<main>
+    <div class="attr-bg mb-3 w-100" style="background-image: url(../img/visabg.jpg)">
+        <span class="container h2 d-block text-center color-white">Виза в Узбекистан</span>
+    </div>
+    <section class="bread-crumb mb-4">
+        <div class="container">
+            <div class="my-4">
+                <a href="../index.html" class="color-grey text-14">Главная</a>
+                <span class="color-grey text-14"> / </span>
+                <span class="color-gold text-14">Виза в Узбекистан</span>
+            </div>
+        </div>
+    </section>
+    <section class="cities-section mb-5">
+        <div class="container">
+            <div>
+                <div class="col-lg-12 mb-5 attraction">
+                    <div class="bg-white drop-shadow bor-rad-2 pb-5">
+                        <div class="tour-text px-3">
+                            <div class="tour-img w-100 cities-img mb-2 bor-rad-2"
+                                 style="background-image: url(../img/uzvisa.jpg)"></div>
+                            <div class="post-item-rit">
+                                <p>According to the legislation of the Republic of Uzbekistan foreign citizens and
+                                    stateless persons can enter Uzbekistan or travel through its territory for transit
+                                    on the basis of entrance visas only.</p>
+                                <p>Foreign citizens and stateless persons can get visas at the diplomatic
+                                    representations and consular missions of the Republic of Uzbekistan abroad on the
+                                    basis of the visa support (confirmation of the Ministry of Foreign Affairs of the
+                                    Republic of Uzbekistan).
+                                    Visa support is issued on the basis of application of the inviting organization,
+                                    company and persons who are permanently or temporarily residing in Uzbekistan and
+                                    submitted to the Ministry of Foreign Affairs of the Republic of Uzbekistan.</p>
+                                <p><b>List of required documents to invite foreigners by organizations and
+                                    companies:</b></p>
+                                <ul>
+                                    <li>
+                                        Visa application on Head letter of organizations and
+                                        companies;
+                                    </li>
+                                    <li>E-form of the site <a style="color: blue" href="http://evisa.mfa.uz/"
+                                                              target="_blank">evisa.mfa.uz</a>;
+                                    </li>
+                                    <li>Copies of passports of the invited person, head of the organization, authorized
+                                        person of organization to submit the documents;
+                                    </li>
+                                    <li>Copies of documents of the organization ( license, certificate, etc.);
+                                    </li>
+                                    <li>Copies of orders to the head and the authorized person;
+                                    </li>
+                                    <li>Copy of Power of Attorney for the authorized person;
+                                    </li>
+                                    <li>For arrival visa at the airport "Tashkent" should be provided copies of tickets;
+                                    </li>
+                                    <li>Certificate of employment of the invited person.
+                                    </li>
+                                </ul>
+                                <p><b>List of required documents to invite foreigners by persons:</b></p>
+                                <ul>
+                                    <li><a href="https://mfa.uz/upload/dokumenty dlya skachivaniya/Xususiy taklif.doc"
+                                           target="_blank">Visa application</a> form;
+                                    </li>
+                                    <li>E-form of the site <a href="http://evisa.mfa.uz/"
+                                                              target="_blank">evisa.mfa.uz</a>;
+                                    </li>
+                                    <li>Copies of passports of the invited and the inviting person;
+                                    </li>
+                                    <li>An original invitation issued by the authorities of internal affairs of
+                                        Uzbekistan;
+                                    </li>
+                                    <li>Copies of documents confirming relationship between invited and the inviting
+                                        person;
+                                    </li>
+                                    <li>For arrival visa at the airport "Tashkent" should be provided copies of tickets.
+                                    </li>
+                                </ul>
+                                <p>Processing of visa application is up to 10 working days if documents have been
+                                    submitted due to the established order.</p>
+                                <p><b>In order to apply for the visa, foreign citizens and stateless persons are to
+                                    submit the following documents to the diplomatic representation or consular mission
+                                    of Uzbekistan abroad:</b></p>
+                                <ul>
+                                    <li>passport or document of stateless person, expiry date of which must exceed the
+                                        visa’s period of validity not less than 3 months;
+                                    </li>
+                                    <li>2 copies of duly completed visa application form;
+                                    </li>
+                                    <li>2 passport-size colored photos.
+                                    </li>
+                                </ul>
+                                <p>For a transit visa foreign citizens and stateless persons in addition to the above
+                                    mentioned documents must have a visa of the country of final destination and travel
+                                    documents with confirmed date of departure from Uzbekistan. In this case processing
+                                    of visa application is 3 working days.</p>
+                                <p>Foreign citizens and stateless persons arriving from the countries where there is no
+                                    diplomatic representation or consular mission of the Republic of Uzbekistan can get
+                                    visas upon arrival at the Visa Section of the Ministry of Foreign Affairs of the
+                                    Republic of Uzbekistan at the Tashkent International Airport. In this case the
+                                    inviting physical or juridical person in Uzbekistan must apply in advance to the
+                                    Ministry of Foreign Affairs of the Republic of Uzbekistan in due order, get visa
+                                    confirmation (stamp) of the Visa Division of the Consular Department and forward it
+                                    to the invited person. This confirmation should be shown by invited person while
+                                    buying an air-ticket and passing through passport control and the visa shall be
+                                    issued on its basis on arrival at the Visa Section of the Ministry of Foreign
+                                    Affairs of the Republic of Uzbekistan at the Tashkent International Airport.</p>
+                                <p><b>The legislation of the Republic of Uzbekistan has set the following consular fees
+                                    for the visa issuance:</b></p>
+                                <p>a) For single entry visas:</p>
+                                <ul>
+                                    <li>up to 7 days — $40;
+                                    </li>
+                                    <li>up to 15 days — $50;
+                                    </li>
+                                    <li>up to 30 days — $60;
+                                    </li>
+                                    <li>up to 3 months — $80;
+                                    </li>
+                                    <li>up to 6 months — $120;
+                                    </li>
+                                    <li>up to 1 year — $160.
+                                    </li>
+                                </ul>
+                                <p>Note: For each additional entry the fee shall be increased by $10.</p>
+                                <p>b) For multiple entry visas:</p>
+                                <ul>
+                                    <li>up to 6 months — $150;
+                                    </li>
+                                    <li>up to 1 year — $250.
+                                    </li>
+                                </ul>
+                                <p>c) For transit visas:</p>
+                                <ul>
+                                    <li>up to 72 hours — $40;
+                                    </li>
+                                    <li>double entry transit visa — $50.
+                                    </li>
+                                </ul>
+                                <p>d) For group visas (groups must consist of more than 5 persons excluding children
+                                    under 16 years old):</p>
+                                <ul>
+                                    <li>up to 15 days — $15 per person;
+                                    </li>
+                                    <li>up to 30 days — $25 per person.
+                                    </li>
+                                </ul>
+                                <p>Except these fees the fees for reimbursement of actual expenses related to the visa
+                                    issuance (administrative fees) will also be paid. The rates of these fees depend on
+                                    the place of visa issuance (irrespective of applicant’s citizenship).</p>
+                                <p><b>Note:</b> <i>Different procedure for issuance of entry visas may be applied to the
+                                    citizens of those countries that have appropriate bilateral agreements with
+                                    Uzbekistan.</i></p></div>
+                            <hr class="bg-gold">
+                            <div class="tour-img w-100 cities-img mb-2 bor-rad-2"
+                                 style="background-image: url(../img/vizauzbe.jpg);"></div>
+                            <div class="post-item-rit">
+                                <p>1. A bilateral visa-free regime has been established with Kyrgyzstan (up to 60 days),
+                                    Tajikistan (up to 30 days), Azerbaijan, Armenia, Belarus, Georgia, Kazakhstan,
+                                    Moldova, Russia and Ukraine.</p>
+                                <p>2. A visa-free regime is introduced for 30 days period for citizens of Australian
+                                    Union, Austrian Republic, Argentine Republic, Bosnia and Herzegovina, Vatican, Grand
+                                    Duchy of Luxembourg, Hungary, Brunei Darussalam State, Greek Republic, Israel,
+                                    Indonesia, Ireland, Iceland, Italian Republic, Canada, Andorra Principality,
+                                    Liechtenstein, Principality of Monaco, the Kingdom of Belgium, the Kingdom of
+                                    Denmark, the Kingdom of Spain, the Kingdom of the Netherlands, the Kingdom of
+                                    Norway, the Kingdom of Sweden, the Republic of Latvia, the Republic of Lithuania,
+                                    Malaysia, Mongolia, New Zealand, Portugal Republic, Republic of Bulgaria, Republic
+                                    of Cyprus, Republic of Korea, Republic of Malta, Republic of Poland, Republic of San
+                                    Marino, Republic of Serbia, Singapore, Republic of Slovenia, Republic of Croatia,
+                                    Republic of Chile, Romania, Slovak Republic, United Kingdom of Great Britain and
+                                    Northern Ireland , Republic of Turkey, Federative Republic of Brazil, Federal
+                                    Republic of Germany, Finland Republic, French Republic, Montenegro, Czech Republic,
+                                    Swiss Confederation, Republic of Estonia, Japan.
+                                    The visa-free regime applies to citizens of these countries, holders of all
+                                    categories of passports (diplomatic, service and civil) planning to visit the
+                                    Republic of Uzbekistan for up to 30 days, regardless of the purpose of their trip.
+                                    In order to enter the country, a person must have a valid national passport or
+                                    another substitute document used for travel to foreign countries.
+                                    The visa-free regime does not apply to stateless persons permanently residing in the
+                                    territories of these countries.
+                                    Accordingly, the visa-free regime is valid for 30 days from the date of entry into
+                                    Uzbekistan. Before the end of the 30-day visa-free stay period, a foreign citizen
+                                    must leave the Republic of Uzbekistan. Exceeding the 30-day visa-free stay is
+                                    recognized as violation of the Rules of stay of foreign citizens in the Republic of
+                                    Uzbekistan.</p>
+                                <p>Accordingly, if it is necessary to stay in Uzbekistan for more than 30 days, a
+                                    foreign citizen must obtain an entry visa to the Republic of Uzbekistan in
+                                    accordance with the established procedure, corresponding to the purpose of his
+                                    trip.</p>
+                                <p>3. Visa-free entry to the Republic of Uzbekistan for foreign citizens up to 16 year
+                                    old with biometric travel document. In this case they must be accompanied by legal
+                                    representatives and they can stay in Uzbekistan for the duration of the visa of the
+                                    accompanying person, but not more than ninety days since the date of entry into the
+                                    country.</p>
+                                <p>4. A visa-free regime is established with China, Hungary, Tajikistan and Turkmenistan
+                                    (up to 30 days), Vietnam and the Republic of Korea (up to 60 days), Brazil, Latvia,
+                                    Poland, Romania, Singapore, Slovakia, Estonia, Kuwait and Turkey (up to 90 days).
+                                    Citizens of these countries who hold diplomatic passports and are accredited as
+                                    employees of diplomatic missions or consular offices of their countries located on
+                                    the territory of Uzbekistan, as well as members of their families have the right to
+                                    enter and stay without visas for the entire period of work.</p>
+                                <p>5. Introduced the system of issuing electronic entry tourist visas (e-visa.gov.uz)
+                                    for foreign citizens, which has simplified the procedure of issuing visas (list of
+                                    countries in Attachment 1);</p>
+                                <p>Starting from March 15, 2019, new system of electronic entry visas with a validity
+                                    period of 30 days has been introduced:</p>
+                                <ul>
+                                    <li>double entry, with a consular fee of $ 35;
+                                    </li>
+                                    <li>multiple entry, with a consular fee of $ 50.
+                                    </li>
+                                </ul>
+                                <p>6. Introduced new short-term transit visa-free entry to the Republic of Uzbekistan
+                                    for a period of five days for a citizens of several countries (list of countries in
+                                    Attachment 2). In this case the foreigners must come through international airports
+                                    of Uzbekistan, showing to frontier officer that they have an air ticket of
+                                    “Uzbekistan Airways” National aircompany to a third country. This procedure is
+                                    applying to transiting passengers wishing to explore the sights-seeing of
+                                    Uzbekistan.</p>
+                                <p>7. Uzbekistan and Japan issue visas without consular fees on the mutual basis.</p>
+                            </div>
+                            <div class="post-item-rit">
+                                <p><i>Attachment 1</i></p>
+                                <b>The list of countries whose citizens can enjoy simplified procedure for issuing
+                                    tourist visa on <a href="" target="_blank">"e-visa.gov.uz"</a></b>
+                                <ul>
+                                    <li>1. Albania
+                                    </li>
+                                    <li>2. Algeria
+                                    </li>
+                                    <li>3. Angola
+                                    </li>
+                                    <li>4. Antigua and Barbuda
+                                    </li>
+                                    <li>5. Bahamas
+                                    </li>
+                                    <li>6. Bahrain
+                                    </li>
+                                    <li>7. Bangladesh
+                                    </li>
+                                    <li>8. Barbados
+                                    </li>
+                                    <li>9. Belize
+                                    </li>
+                                    <li>10. Bolivia
+                                    </li>
+                                    <li>11. Butane
+                                    </li>
+                                    <li>12. Cambodia
+                                    </li>
+                                    <li>13. Cameroon
+                                    </li>
+                                    <li>14. Cape Verde
+                                    </li>
+                                    <li>15. China
+                                    </li>
+                                    <li>16. Colombia
+                                    </li>
+                                    <li>17. Commonwealth of Dominica
+                                    </li>
+                                    <li>18. Costa Rica
+                                    </li>
+                                    <li>19. Cote d'Ivoire
+                                    </li>
+                                    <li>20. Cuba
+                                    </li>
+                                    <li>21. Dominicana
+                                    </li>
+                                    <li>22. Ecuador
+                                    </li>
+                                    <li>23. Egypt
+                                    </li>
+                                    <li>24. El Salvador
+                                    </li>
+                                    <li>25. Fiji
+                                    </li>
+                                    <li>26. Gabon
+                                    </li>
+                                    <li>27. Ghana
+                                    </li>
+                                    <li>28. Grenada
+                                    </li>
+                                    <li>29. Guatemala
+                                    </li>
+                                    <li>30. Guyana
+                                    </li>
+                                    <li>31. Honduras
+                                    </li>
+                                    <li>32. India
+                                    </li>
+                                    <li>33. Jamaica
+                                    </li>
+                                    <li>34. Jordan
+                                    </li>
+                                    <li>35. Kiribati
+                                    </li>
+                                    <li>36. Korea, Republic of
+                                    </li>
+                                    <li>37. Kuwait
+                                    </li>
+                                    <li>38. Laos
+                                    </li>
+                                    <li>39. Lebanon
+                                    </li>
+                                    <li>40. Macedonia
+                                    </li>
+                                    <li>41. Maldives
+                                    </li>
+                                    <li>42. Marshall Islands
+                                    </li>
+                                    <li>43. Mauritius
+                                    </li>
+                                    <li>44. Mexico
+                                    </li>
+                                    <li>45. Micronesia
+                                    </li>
+                                    <li>46. Morocco
+                                    </li>
+                                    <li>47. Nauru
+                                    </li>
+                                    <li>48. Nepal
+                                    </li>
+                                    <li>49. Nicaragua
+                                    </li>
+                                    <li>50. Oman
+                                    </li>
+                                    <li>51. Palau
+                                    </li>
+                                    <li>52. Panama
+                                    </li>
+                                    <li>53. Paraguay
+                                    </li>
+                                    <li>54. Peru
+                                    </li>
+                                    <li>55. Philippines
+                                    </li>
+                                    <li>56. Qatar
+                                    </li>
+                                    <li>57. Saint Kitts and Nevis
+                                    </li>
+                                    <li>58. Saint Lucia
+                                    </li>
+                                    <li>59. Saint Vincent and the Grenadines
+                                    </li>
+                                    <li>60. Samoa
+                                    </li>
+                                    <li>61. Saudi Arabia
+                                    </li>
+                                    <li>62. Senegal
+                                    </li>
+                                    <li>63. Seychelles
+                                    </li>
+                                    <li>64. Solomon islands
+                                    </li>
+                                    <li>65. Sri Lanka
+                                    </li>
+                                    <li>66. Suriname
+                                    </li>
+                                    <li>67. Thailand
+                                    </li>
+                                    <li>68. Tonga
+                                    </li>
+                                    <li>69. Trinidad and Tobago
+                                    </li>
+                                    <li>70. Tunisia
+                                    </li>
+                                    <li>71. United Arab Emirates
+                                    </li>
+                                    <li>72. Uruguay
+                                    </li>
+                                    <li>73. USA
+                                    </li>
+                                    <li>74. Vanuatu
+                                    </li>
+                                    <li>75. Venezuela
+                                    </li>
+                                    <li>76. Vietnam
+                                    </li>
+                                </ul>
+                                <p>Note: <i>If necessary, the Ministry of Foreign Affairs of the Republic of Uzbekistan
+                                    has the right to impose restrictions on obtaining an electronic entry visa for
+                                    foreign citizens for a period of up to 30 days.</i></p>
+
+                                <p><i>Attachment 1</i></p>
+                                <b>The list of countries whose citizens can enjoy visa-free transit entry, stay up to 5
+                                    days</b>
+                                <ul>
+                                    <li>1. Albania
+                                    </li>
+                                    <li>2. Algeria
+                                    </li>
+                                    <li>3. Antigua and Barbuda
+                                    </li>
+                                    <li>4. Bahamas
+                                    </li>
+                                    <li>5. Bahrain
+                                    </li>
+                                    <li>6. Barbados
+                                    </li>
+                                    <li>7. Belize
+                                    </li>
+                                    <li>8. Bhutan
+                                    </li>
+                                    <li>9. China (including Hong Kong)
+                                    </li>
+                                    <li>10. Colombia
+                                    </li>
+                                    <li>11. Costa Rica
+                                    </li>
+                                    <li>12. Dominica
+                                    </li>
+                                    <li>13. Dominican Republic
+                                    </li>
+                                    <li>14. Ecuador
+                                    </li>
+                                    <li>15. Equatorial Guinea
+                                    </li>
+                                    <li>16. Fiji
+                                    </li>
+                                    <li>17. Gabon
+                                    </li>
+                                    <li>18. Grenada
+                                    </li>
+                                    <li>19. Guatemala
+                                    </li>
+                                    <li>20. Guyana
+                                    </li>
+                                    <li>21. Honduras
+                                    </li>
+                                    <li>22. India
+                                    </li>
+                                    <li>23. Jamaica
+                                    </li>
+                                    <li>24. Kuwait
+                                    </li>
+                                    <li>25. Lebanon
+                                    </li>
+                                    <li>26. Macedonia
+                                    </li>
+                                    <li>27. Maldives
+                                    </li>
+                                    <li>28. Mauritius
+                                    </li>
+                                    <li>29. Mexico
+                                    </li>
+                                    <li>30. Morocco
+                                    </li>
+                                    <li>31. Nauru
+                                    </li>
+                                    <li>32. Oman
+                                    </li>
+                                    <li>33. Palau
+                                    </li>
+                                    <li>34. Panama
+                                    </li>
+                                    <li>35. Peru
+                                    </li>
+                                    <li>36. Philippines
+                                    </li>
+                                    <li>37. Qatar
+                                    </li>
+                                    <li>38. Saint Kitts and Nevis
+                                    </li>
+                                    <li>39. Saint Lucia
+                                    </li>
+                                    <li>40. Saint Vincent and the Grenadines
+                                    </li>
+                                    <li>41. Saudi Arabia
+                                    </li>
+                                    <li>42. Seychelles
+                                    </li>
+                                    <li>43. South Africa
+                                    </li>
+                                    <li>44. Sri Lanka
+                                    </li>
+                                    <li>45. Suriname
+                                    </li>
+                                    <li>46. Thailand
+                                    </li>
+                                    <li>47. Trinidad and Tobago
+                                    </li>
+                                    <li>48. Tunisian Republic
+                                    </li>
+                                    <li>49. Turkmenistan
+                                    </li>
+                                    <li>50. United Arab Emirates
+                                    </li>
+                                    <li>51. Uruguay
+                                    </li>
+                                    <li>52. USA
+                                    </li>
+                                    <li>53. Venezuela
+                                    </li>
+                                    <li>54. Vietnam
+
+                                        <p><b>Note:</b> <i>For registration and prolonging visa to Uzbekistan, you can
+                                            use the services of the Department of Diplomatic Service of the Ministry of
+                                            Foreign Affairs of the Republic of Uzbekistan.</i></p></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+</main>
+<footer class="bg-black py-5">
+    <div class="container d-flex flex-wrap justify-content-between">
+        <div class="col-md-4">
+            <span class="h3 color-white font-light mb-4 d-block">О нас</span>
+            <span class="text-14 color-grey mb-4">Мы тепло приветствуем вас в Узбекистане и Центральной Азии, сердце Великого шелкового пути!</span>
+            <hr class="bg-grey">
+        </div>
+        <div class="col-md-4 pe-md-4 ps-md-4">
+            <span class="color-white font-light h3 mb-4 d-block">
+                Социальные сети
+            </span>
+            <div class="social">
+                <a href="#" class="bg-facebook"><i class="fa-brands fa-facebook-f" style="color: white"></i></a>
+                <a href="#" class="bg-telegram"><i class="fa-brands fa-telegram" style="color: white"></i></a>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <span class="h3 color-white font-light mb-4 d-block">О нас</span>
+            <span class="color-grey mb-2 d-block"><i class="fa-solid fa-location-dot color-grey me-2"></i>Ул. Амир Темур, Ташкент, Узбекистан.</span>
+            <a href="info@m.uz" class="color-grey mb-2 d-block"><i class="fa-solid fa-envelope color-grey me-2"></i>info@.uz</a>
+            <a href="tel:998999999999" class="color-grey mb-2 d-block"><i class="fa-solid fa-phone color-grey me-2"></i>+998
+                99 999-99-99</a>
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
+</body>
+</html>

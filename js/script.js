@@ -1,5 +1,5 @@
 $(function () {
-    const swiper = new Swiper('.swiper', {
+    const swiper = new Swiper('.index', {
         loop: true,
         slidesPerView: 3,
         spaceBetween: 30,
@@ -26,11 +26,21 @@ $(function () {
         }
     });
 
+    const swiper2 = new Swiper('.tour-img', {
+        loop: true,
+        slidesPerView: 1,
+        spaceBetween: 30,
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    });
+
     $('.menu-btn').on('click', function () {
         $('.menu').slideDown();
         $('body').addClass('active');
     });
-    
+
     $('.menu-exit').on('click', function () {
         $('.menu').slideUp();
         $('body').removeClass('active');

@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta charset="UTF-8">
+    <title>Флопа и фауна</title>
+    <!--  links  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="../css/style.css">
+
+    <!--  scripts  -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://kit.fontawesome.com/d46c800a71.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="../js/script.js"></script>
+</head>
+<body>
+
+<div class="menu">
+    <div class="d-flex flex-column">
+        <div class="menu-exit p-4">
+            <a href="../index.html" class="font-light h3">Logo</a>
+            <i class="fa-solid fa-xmark"></i>
+        </div>
+        <div class="menu-items d-flex flex-column">
+            <a href="../index.html" class="m-item text-18 font-light px-4 py-2">Главная</a>
+            <a href="../tours/tours.html" class="m-item text-18 font-light px-4 py-2">Туры</a>
+            <div class="m-item accordion accordion-flush" id="accordionFlushExample">
+                <div class="accordion-item">
+                    <span class="accordion-header" id="flush-headingOne">
+                        <button class="text-18 px-4 py-2 shadow-none bor-none p-0 font-light accordion-button collapsed"
+                                type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne"
+                                aria-expanded="false" aria-controls="flush-collapseOne">
+                            Направления
+                        </button>
+                    </span>
+                    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                         data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body d-flex p-0 flex-column">
+                            <div class="accordion-item">
+                                <span class="accordion-header" id="hotels-headingOne">
+                                    <button class="text-18 px-4 py-2 shadow-none bor-none p-0 font-light accordion-button collapsed"
+                                            type="button" data-bs-toggle="collapse" data-bs-target="#hotels-collapseOne"
+                                            aria-expanded="false" aria-controls="hotels-collapseOne">
+                                        Отели Узбекистана
+                                    </button>
+                                </span>
+                                <div id="hotels-collapseOne" class="accordion-collapse collapse"
+                                     aria-labelledby="hotels-headingOne" data-bs-parent="#hotelsFlushExample">
+                                    <div class="accordion-body d-flex p-0 flex-column">
+                                        <a class="m-item text-18 font-light px-4 ps-5 py-2"
+                                           href="../hotels/tashkent.html">Отели Ташкента</a>
+                                        <a class="m-item text-18 font-light px-4 ps-5 py-2"
+                                           href="../hotels/tashkent.html">Отели Самарканда</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <span class="accordion-header" id="attr-headingOne">
+                                    <button class="text-18 px-4 py-2 shadow-none bor-none p-0 font-light accordion-button collapsed"
+                                            type="button" data-bs-toggle="collapse" data-bs-target="#attr-collapseOne"
+                                            aria-expanded="false" aria-controls="attr-collapseOne">
+                                        Достопримечательности Узбекистана
+                                    </button>
+                                </span>
+                                <div id="attr-collapseOne" class="accordion-collapse collapse"
+                                     aria-labelledby="attr-headingOne" data-bs-parent="#attrFlushExample">
+                                    <div class="accordion-body d-flex p-0 flex-column">
+                                        <a class="m-item text-18 font-light px-4 ps-5 py-2"
+                                           href="../attraction/tashkent.html">Достопримечательности
+                                            Ташкента</a>
+                                        <a class="m-item text-18 font-light px-4 ps-5 py-2"
+                                           href="../attraction/tashkent.html">Достопримечательности
+                                            Самарканда</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="m-item text-18 font-light px-4 ps-5 py-2" href="../visa/index.html">Виза в
+                                Узбекистан</a>
+                            <a class="m-item text-18 font-light px-4 ps-5 py-2" href="../kitchen/index.html">Национальная
+                                кухня</a>
+                            <a class="m-item text-18 font-light px-4 ps-5 py-2" href="../posol/index.html">Посольства Узбекистана</a>
+                            <a class="m-item text-18 font-light px-4 ps-5 py-2" href="#">Флора и Фауна</a>
+                            <a class="m-item text-18 font-light px-4 ps-5 py-2" href="../control/index.html">Таможенные правила</a>
+                            <a class="m-item text-18 font-light px-4 ps-5 py-2" href="#">Пограничные пункты</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="m-item text-18 font-light px-4 py-2">Транспорт</a>
+            <a href="#" class="m-item text-18 font-light px-4 py-2">Блог</a>
+            <a href="#" class="m-item text-18 font-light px-4 py-2">Галерея</a>
+            <a href="#" class="m-item text-18 font-light px-4 py-2">О нас</a>
+            <a href="#" class="m-item text-18 font-light px-4 py-2">Контакты</a>
+        </div>
+    </div>
+</div>
+
+<header class="bg-black">
+    <div class="container py-3 d-flex justify-content-between align-items-center">
+        <a href="../index.html" class="text-18 color-gold">
+            Logo
+        </a>
+        <div class="menu-btn">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <div class="nav-header d-flex align-items-center">
+            <a href="../index.html" class="br-r text-14 color-white">Главная</a>
+            <a href="../tours/tours.html" class="br-r text-14 color-white">Туры</a>
+            <div class="nav-dd dropdown">
+                <a href="#" class="br-r text-14 color-white dropdown-toggle" data-bs-toggle="dropdown" role="button"
+                   data-bs-auto-close="outside" aria-expanded="false">Направления</a>
+                <ul class="dropdown-menu bg-black bor-rad-1 p-2">
+                    <li class="btn-group dropend">
+                        <button type="button"
+                                class="btn dropdown-item shadow-none bor-none dropdown-toggle hover-gold bg-black"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                            Гостиницы Узбекистана
+                        </button>
+                        <ul class="dropdown-menu bg-black bor-rad-1 p-2">
+                            <li><a class="dropdown-item color-white hover-gold bg-black" href="../hotels/tashkent.html">Гостиница
+                                Ташкента</a></li>
+                            <li><a class="dropdown-item color-white hover-gold bg-black" href="../hotels/tashkent.html">Гостиница
+                                Самарканда</a></li>
+                            <li><a class="dropdown-item color-white hover-gold bg-black" href="../hotels/tashkent.html">Гостиница
+                                Бухары</a></li>
+                        </ul>
+                    </li>
+                    <li class="btn-group dropend">
+                        <button type="button"
+                                class="btn dropdown-item shadow-none bor-none dropdown-toggle hover-gold bg-black"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                            Достопримечательности
+                        </button>
+                        <ul class="dropdown-menu bg-black bor-rad-1 p-2">
+                            <li><a class="dropdown-item color-white hover-gold bg-black"
+                                   href="../attraction/tashkent.html">Достопримечательности
+                                Ташкента</a></li>
+                            <li><a class="dropdown-item color-white hover-gold bg-black"
+                                   href="../attraction/tashkent.html">Достопримечательности
+                                Самарканда</a></li>
+                            <li><a class="dropdown-item color-white hover-gold bg-black"
+                                   href="../attraction/tashkent.html">Достопримечательности
+                                Бухары</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="dropdown-item color-white hover-gold bg-black" href="../visa/index.html">Виза в
+                        Узбекистан</a></li>
+                    <li><a class="dropdown-item color-white hover-gold bg-black" href="../kitchen/index.html">Национальная
+                        кухня</a></li>
+                    <li><a class="dropdown-item color-white hover-gold bg-black" href="../posol/index.html">Посольства
+                        Узбекистана</a>
+                    </li>
+                    <li><a class="dropdown-item color-white hover-gold bg-black" href="#">Флора и Фауна</a></li>
+                    <li><a class="dropdown-item color-white hover-gold bg-black" href="../control/index.html">Таможенные правила</a></li>
+                    <li><a class="dropdown-item color-white hover-gold bg-black" href="#">Пограничные пункты</a></li>
+                </ul>
+            </div>
+            <a href="#" class="br-r text-14 color-white">Транспорт</a>
+            <a href="#" class="br-r text-14 color-white">Блог</a>
+            <a href="#" class="br-r text-14 color-white">Галерея</a>
+            <a href="#" class="br-r text-14 color-white">О нас</a>
+            <a href="#" class="br-r text-14 color-white">Контакты</a>
+        </div>
+    </div>
+</header>
+<main>
+    <div class="attr-bg mb-3 w-100" style="background-image: url(../img/uzb_nat1.jpg)">
+        <div class="w-100 h-100 d-flex align-items-center" style="background-color: rgba(0,0,0,0.31)">
+            <span class="container h2 d-block text-center color-white">Флора и Фауна</span>
+        </div>
+    </div>
+    <section class="bread-crumb mb-4">
+        <div class="container">
+            <div class="my-4">
+                <a href="../index.html" class="color-grey text-14">Главная</a>
+                <span class="color-grey text-14"> / </span>
+                <span class="color-gold text-14">Флора и Фауна</span>
+            </div>
+        </div>
+    </section>
+    <section class="cities-section mb-5">
+        <div class="container">
+            <div>
+                <div class="col-lg-12 mb-5 attraction">
+                    <div class="bg-white drop-shadow bor-rad-2 pb-5">
+                        <div class="tour-text px-3">
+                            <div class="tour-img w-100 cities-img mb-2 bor-rad-2"
+                                 style="background-image: url(../img/uzb_nat1.jpg)"></div>
+                            <div class="post-item-rit">
+                                <p>Uzbekistan's natural world is very diverse. It is composed of desert areas and snowy
+                                    mountains, rivers and completely dry lands. The most part of its territory lies in
+                                    the Turon plain, where there are no sudden steep-drops and hills. The Turon plate
+                                    and mainland, which later became the Tian Shan and Pamir -Alai Mountains, were
+                                    formed in the Paleolithic period. Later, the sea covered the plate for a long time.
+                                    The mountain chains are thought to have fully developed during the Alps orogenesis.
+                                    The mountain ranges blocked the humidity from the Indian Ocean. It caused
+                                    considerable climatic change: the weather became dry and huge desert areas appeared.
+                                    As rivers and winds kept changing their directions, the upper layer of soil was
+                                    continuously displaced from one place to another. It led to the formation of the
+                                    Kyzyl Kum and Kara Kum deserts. </p>
+                                <p>Mountains and foothills make up about one-fifth of the territory of Uzbekistan. The
+                                    highest point is 4,643 meters. Mountains cover the east of the country. Uzbekistan
+                                    embraces western parts of the Tian Shan and Pamir-Alai mountain ranges,
+                                    respectively. The mountain ranges are very different: there is a sharp contrast of
+                                    heights, foothills, canyons, and watersheds.</p>
+                                <p>There are also small mountains such as Aktau, Karakchitau and the western part of the
+                                    Zarafshon mountain range with their smooth shape. Rather big depressions stretch
+                                    between the mountains: Kashkadarya, Surkhandarya, Zarafshon, and Samarkand. The
+                                    largest depression is the Ferghana Valley - 370 km long and 190 km wide. It is
+                                    surrounded by mountain ranges on three sides except on the western face. On the
+                                    border with Afghanistan, there is the huge Amu Darya depression.</p>
+                            </div>
+                            <hr class="bg-gold">
+                            <div class="post-item-rit">
+                                <p>Numerous deposits of oil and gas have been discovered on the plains such as Gazli,
+                                    Shakhpakhti, and others, of naturally formed salt in Borsakelmas, and materials used
+                                    in construction elsewhere.</p>
+                                <p>Deposits of coal (Angren, Shargun, and Boysun), precious, non-ferrous and rare
+                                    metals, fluorite, and construction materials go back to the early stage of
+                                    orogenesis.</p>
+                                <p>A distinctive feature of Uzbekistan's natural conditions is that the country is
+                                    located in a seismologic zone. In the last two centuries the country has experienced
+                                    numerous of disastrous earthquakes, including in Ferghana (1823), in Andijan (1889
+                                    and 1902), and Tashkent (1866, 1868, and 1966). Seismologic movement is more active
+                                    in mountain areas than in plains. Special construction models are used in buildings
+                                    in active seismological zones.</p></div>
+                            <hr class="bg-gold">
+                            <div class="tour-img w-100 cities-img mb-2 bor-rad-2"
+                                 style="background-image: url(../img/uzb_nat2.jpg)"></div>
+                            <div class="post-item-rit">
+                                <p>Uzbekistan’s flora comprises of more than 3,700 species of plants. 20% of plants are
+                                    endemic ones (can not be found in other places); major part of them grow in
+                                    mountains. Flora of steppes and deserts consists of unique bushes. Wooden, bushy,
+                                    grassy plants are well developed in low plains. Tugays feature reeds and
+                                    kendyrs.</p>
+                                <p> Landscape of submountainous plains is characterized by grass, there are no trees,
+                                    and bushes may be found along the water flows. Various species of onion, tulips,
+                                    rhubarb, irises grow here. High foothills feature dry steppes with motley grass on
+                                    gray earth. Ushes such as almond-tree, kurchava, cherry grove grow on stony
+                                    sites.</p>
+                                <p> The most valuable wood species - Zerafshani archa grows in lower mountains.
+                                    Deciduous species such as maple, hawthorn, various sorts of wild apple-trees,
+                                    pistachio-tree, walnut-tree, birch, willow, poplar, cherry-tree are also widespread.
+                                    Lower mountains are rich in bushes: honeysuckle, barberry, dog-rose, meadow-sweet,
+                                    bushes of wild grape. Grasses are also very diverse: muscat sage, rhubarb, tulip,
+                                    Pskem onion (precious herb). Middle mountains feature dog-rose and other bushes.
+                                    Only 30% of high mountains are covered with plants. Mostly tipchak grows here.</p>
+                            </div>
+                            <hr class="bg-gold">
+                            <div class="tour-img w-100 cities-img mb-2 bor-rad-2"
+                                 style="background-image: url(../img/uzb_nat3.jpg)"></div>
+                            <div class="post-item-rit">
+                                <p>Like flora, Uzbekistan’s fauna is also very diverse. One can find many
+                                    representatives of Asian fauna. Among them are: mammals (wolf, big-eared hedgehog,
+                                    vixen, hare - toloy, tortoise, djeyran, saygak, wild boar, spiral horny billy-goat,
+                                    mountain sheep, badger, stone marten, bear, snow leopard, ermine, Siberian mountain
+                                    billy-goat, lamellitoothed rat, jacal, Bukharan deer, Bukharan, sharp-eared night
+                                    gopher, jerboa), reptiles (heccons, agama, sand boa, arrow-snake, Central Asian
+                                    cobra, quadristripe sledge runner, Alay , birds (pretty bustard, dun goatsucker,
+                                    jay, shrike, mountain finch, bunting, lentil, grand turtle-dove, black griffon,
+                                    lammergeyer, bearded vulture, jackdow, pheasant, cuckoo, yellow wagtail, magpie,
+                                    black crow, southern nightingale, whiskered tomtit, cane bunting,), insects,
+                                    etc.</p>
+                                <p><b>Water resources of Uzbekistan - sea, rivers, lakes</b></p>
+                            </div>
+                            <hr class="bg-gold">
+                            <div class="tour-img w-100 cities-img mb-2 bor-rad-2"
+                                 style="background-image: url(../img/uzb_nat4.jpg)"></div>
+                            <div class="post-item-rit">
+                                <p>The Sea is a saline endorheic basin in Central Asia; it lies between Kazakhstan
+                                    (Aktobe and Kyzylorda provinces) in the north and Karakalpakstan, an autonomous
+                                    region of Uzbekistan, in the south. The name roughly translates as "Sea of Islands",
+                                    referring to more than 1,534 islands that once dotted its waters.</p>
+                                <p> Formerly one of the four largest lakes in the world with an area of 68,000 square
+                                    kilometres (26,300 sq mi), the Aral Sea has been steadily shrinking since the 1960s
+                                    after the rivers that fed it were diverted by Soviet Union irrigation projects. By
+                                    2007 it had declined to 10% of its original size, splitting into four lakes – the
+                                    North Aral Sea and the eastern and western basins of the once far larger South Aral
+                                    Sea and one smaller lake between North and South Aral Sea. By 2009, the
+                                    south-eastern lake had disappeared and the south-western lake retreated to a thin
+                                    strip at the extreme west of the former southern sea. The maximum depth of the North
+                                    Aral Sea is 42 m (138 ft) (as of 2008).</p>
+                                <p> The region's once prosperous fishing industry has been virtually destroyed, bringing
+                                    unemployment and economic hardship. The Aral Sea region is also heavily polluted,
+                                    with consequent serious public health problems. The retreat of the sea has
+                                    reportedly also caused local climate change, with summers becoming hotter and drier,
+                                    and winters colder and longer.[5]The destruction of the Aral Sea ecosystem has been
+                                    sudden and severe. Beginning in the 1960s, agricultural demands have deprived this
+                                    large Central Asian salt lake of enough water to sustain itself, and it has shrunk
+                                    rapidly. Uzbekistan, Kazakhstan, and other Central Asian states use this water to
+                                    grow cotton and other export crops, in the face of widespread environmental
+                                    consequences, including fisheries loss, water and soil contamination, and dangerous
+                                    levels of polluted airborne sediments. It is generally agreed that the current
+                                    situation is unsustainable, but export dependency of the Central Asian states have
+                                    prevented real action, and the sea continues to shrink.</p>
+                                <p> It is no exaggeration to say that the case of the Aral Sea is one of the greatest
+                                    environmental catastrophes ever recorded. Humans have made use of the waters of the
+                                    Aral basin for thousands of years, borrowing from its two major rivers: the Amu
+                                    Darya, which flows into the Aral Sea from the south; and the Syr Darya, which
+                                    reaches the sea at its north end. As the twentieth century began, irrigated
+                                    agriculture in the basin was still being conducted at asustainable level. After the
+                                    Russian Empire was replaced by the Soviet Union, this began to change. Traditional
+                                    agricultural practices were destroyed by collectivization, and Soviet planners
+                                    sought products that could be exported for hard currency. They placed cotton high on
+                                    their list, calling it `white gold,' and the Soviet Union became a net exporter of
+                                    cotton in 1937. Change accelerated in the 1950s, as Central Asian irrigated
+                                    agriculture was expanded and mechanized. The Kara Kum Canal opened in 1956,
+                                    diverting large amounts of water from the Amu Darya into the desert of Turkmenistan,
+                                    and millions of hectares of land came under irrigation after 1960. A crucial
+                                    juncture had been reached, and after 1960 the level of the Aral Sea began to drop,
+                                    while diversion of water continued to increase. While the sea had been receiving
+                                    about fifty cubic kilometers of water per year in 1965, by the early 1980s this had
+                                    fallen to zero. As the Aral shrank, its salinity increased, and by 1977 the formerly
+                                    large fish catch had declined by over seventy-five percent. By the early 1980s,
+                                    commercially useful fish had been eliminated, shutting down an industry that had
+                                    employed 60,000. The declining sea level lowered the water table in the region,
+                                    destroying many oases near its shores. The devotion to irrigated agriculture had
+                                    other direct effects as well. Much ecologically sensitive land in the river deltas
+                                    was converted to cropland, and pesticide use was heavy throughout the Aral basin,
+                                    resulting in heavy contaminant concentrations in the sea. Overirrigation caused salt
+                                    buildup in many agricultural areas. By the beginning of the 1990s, the surface area
+                                    of the Aral had shrunk by nearly half, and the volume was down by seventy-five
+                                    percent. A host of secondary effects began to appear. Regional climate became more
+                                    continental, shortening the growing season and causing some farmers to switch from
+                                    cotton to rice, which demanded even more diverted water. The exposed area of former
+                                    seabed was now over 28,000 square kilometers, from which winds picked up an
+                                    estimated 43 million tons of sediments laced with salts and pesticides, with
+                                    devastating health consequences for surrounding regions. These contaminated Aral
+                                    dust storms have been reported as far away as the Arctic and Pakistan. Respiratory
+                                    illnesses were particularly common, and throat cancers burgeoned. Regional
+                                    vegetation loss may have increased albedo, possible reducing precipitation.</p>
+                            </div>
+                            <hr class="bg-gold">
+                            <div class="post-item-rit">
+                                <p>The Amu Darya was called the Oxus by the ancient Greeks. In ancient times, the river
+                                    was regarded as the boundary between Irān and Tūrān. The river's drainage lies in
+                                    the area between the former empires of Genghis Khan and Alexander the Great,
+                                    although they occurred at much different times. One southern route of the Silk Road
+                                    ran along part of the Amu Darya northwestward from Termez before going westwards to
+                                    the Caspian Sea.</p>
+                                <p> It is believed that the Amu Darya's course across the Kara-Kum Desert has gone
+                                    through several major shifts in the past few thousand years. Much of the time, the
+                                    most recent period being in the 13th century to the late 16th century, the Amu Darya
+                                    emptied into both the Aral and the Caspian Seas, the latter via a large distributary
+                                    called the Uzboy River. The Uzboy splits off from the main channel just south of the
+                                    Amudarya Delta. Sometimes, the flow through the two branches was more or less equal,
+                                    but often, most of the Amu Darya's flow split to the west and flowed into the
+                                    Caspian.</p>
+                                <p> People began to settle along the lower Amu Darya and the Uzboy in the 5th century
+                                    A.D., establishing a thriving chain of agricultural lands, towns, and cities. The
+                                    river was impounded in about 985 A.D. at the bifurcation of the forks by the massive
+                                    Gurganj Dam, which diverted water to the Aral. The dam was destroyed by Genghis
+                                    Khan's troops in 1221, and the Amu Darya shifted its flows more or less equally
+                                    between the main stem and the Uzboy. But in the 18th century, the river again turned
+                                    north, flowing into the Aral Sea, a path it has taken since. Less and less water
+                                    flowed down the Uzboy until, in the 1720s, the river's surface flow completely dried
+                                    up. The first British explorer to reach the region in the Great Game period was a
+                                    naval officer called John Wood. He was sent on an expedition to find the source of
+                                    the river in 1839. He found modern day Lake Zorkul, called it Lake Victoria and
+                                    proclaimed he had found the source.</p>
+                                <p> The Soviet Union became the ruling power in the 20th century. The Soviet Union fell
+                                    in the 1990s and Central Asia split up into the many smaller countries that lie
+                                    within or partially within the Amu Darya basin. In the 1960s and 1970s, the Amu
+                                    Darya and Syr Darya were first used by the Soviets to irrigate extensive cotton
+                                    fields in the Central Asian plain. Before this time, water from the rivers was
+                                    already being used for agriculture, but not on this massive scale. The Qaraqum
+                                    Canal, Karshi Canal, and Bukhara Canal were among the larger of the irrigation
+                                    diversions built. The Main Turkmen Canal was a proposed project that would have
+                                    diverted water along the dry Uzboy River bed into central Turkmenistan, but was
+                                    never built.</p>
+                                <p>The river's total length is 2,400 kilometres (1,500 mi) and its drainage basin totals
+                                    534,739 square kilometres (206,464 sq mi) in area, providing a mean discharge of
+                                    around 97.4 cubic kilometres (23.4 cu mi) of water per year. The river is navigable
+                                    for over 1,450 kilometres (900 mi). All of the water comes from the high mountains
+                                    in the south where annual precipitation can be over 1,000 mm (39 in). Even before
+                                    large-scale irrigation began, high summer evaporation meant that not all of this
+                                    discharge reached the Aral Sea - though there is some evidence the large Pamir
+                                    glaciers provided enough melt water for the Aral to overflow during the 13th and
+                                    14th centuries A.D.</p>
+                                <p> One source of the Amu Darya is the Pamir River, which emerges from Lake Zorkul (once
+                                    also known as Lake Victoria) in the Pamir Mountains (ancient Mount Imeon), and flows
+                                    west to Qila-e Panja, where it joins the Wakhan River to form the Panj River.
+                                    Another claimed source of the Amu Darya is an ice cave at the end of the Wakhjir
+                                    valley, in the Wakhan Corridor, in the Pamir Mountains, near the border with
+                                    Pakistan. A glacier turns into the Wakhan River and joins the Pamir River about 50
+                                    kilometres (31 mi) downstream.</p>
+                                <p> The Panj River forms the border of Afghanistan and Tajikistan. It flows west to
+                                    Ishkashim where it turns north and then east north-west through the Pamirs passing
+                                    the Tajik-Afghan Friendship Bridge. It subsequently forms the border of Afghanistan
+                                    and Uzbekistan for about 200 kilometres (120 mi), passing Termez and the
+                                    Afghanistan-Uzbekistan Friendship Bridge. It delineates the border of Afghanistan
+                                    and Turkmenistan for another 100 kilometres (62 mi) before it flows into
+                                    Turkmenistan at Atamyrat. As the Amudarya, it flows across Turkmenistan south to
+                                    north, passing Türkmenabat, and forms the border of Turkmenistan and Uzbekistan from
+                                    Halkabat. It is then split into many waterways that are used to form the river delta
+                                    joining the Aral Sea, passing Urgench, Daşoguz and other cities, but it does not
+                                    reach what is left of the sea anymore and is lost in the desert.</p>
+                                <p> Use of water from the Amu Darya for irrigation has been a major contributing factor
+                                    to the shrinking of the Aral Sea since the late 1950s.</p>
+                            </div>
+                            <hr class="bg-gold">
+                            <div class="post-item-rit">
+                                <p>The name, which comes from Persian and has long been used in the East, is a
+                                    relatively recent one in western writings; prior to the early 20th century, the
+                                    river was known by various versions of its ancient Greek name. Following the Battle
+                                    of Jaxartes the river marked the northernmost limit of Alexander the Great's
+                                    conquests. Greek historians have claimed that here in 329 BC he founded the city
+                                    Alexandria Eschate (literally, "Alexandria the Furthest") as a permanent garrison.
+                                    The city is now known as Khujand. In reality, he had just renamed (and possibly,
+                                    expanded) the city of Cyropolis founded by king Cyrus the Great of Persia, more than
+                                    two centuries earlier.</p>
+                                <p>The river rises in two headstreams in the Tian Shan Mountains in Kyrgyzstan and
+                                    eastern Uzbekistan—the Naryn River and the Kara Darya—and flows for some 2,212
+                                    kilometres (1,374 mi) west and north-west Uzbekistan and southern Kazakhstan to the
+                                    remains of the Aral Sea. The Syr Darya drains an area of over 800,000 square
+                                    kilometres (310,000 sq mi), but no more than 200,000 square kilometres (77,000 sq
+                                    mi) actually contribute significant flow to the river. Its annual flow is a very
+                                    modest 37 cubic kilometres (30,000,000 acre ft) per year—half that of its sister
+                                    river, the Amu Darya.</p>
+                                <p> Along its course, the Syr Darya irrigates the most fertile cotton-growing region in
+                                    the whole of Central Asia, together with the towns of Kokand, Khujand, Kyzylorda and
+                                    Turkestan.</p>
+                                <p> An extensive system of canals, many built in the 18th century by the Uzbek Khanate
+                                    of Kokand, spans the regions the river flows through. Massive expansion of
+                                    irrigation canals during the Soviet period, to irrigate cotton fields, caused
+                                    ecological damage to the area, with the river drying up long before reaching the
+                                    Aral Sea which, as a result, has shrunk to a small remnant of its former size. With
+                                    millions of people now settled in these cotton areas, it is not clear how the
+                                    situation can be rectified.</p>
+                            </div>
+                            <div class="post-item-rit">
+                                <p>Zeravshan River is a river in Central Asia. Its name, "sprayer of gold" in Persian,
+                                    refers to the presence of gold-bearing sands in the upper reaches of the river. To
+                                    the ancient Greeks it was known as the 'Polytimetus'. It was also formerly known as
+                                    Sughd River.</p>
+                                <p> It rises at 39°30′N 70°35′E / 39.5°N 70.583°E / 39.5; 70.583 on the fringes of the
+                                    Pamirs in Tajikistan, flowing due west for some 300 kilometres (190 mi), passing
+                                    Penjikent before entering Uzbekistan at 39°32′N 67°27′E / 39.533°N 67.45°E / 39.533;
+                                    67.45, where it turns west-to-north-west, flowing past the legendary city of
+                                    Samarkand, which is entirely dependent on the oasis thus created, until it bends
+                                    left again to the west north of Navoiy and further to the south-west, passing
+                                    Bukhara before it is lost in the desert beyond the city of Qorako‘l (Karakul), not
+                                    quite reaching the Amu Darya, of which it was formerly a tributary.</p>
+                            </div>
+                            <div class="post-item-rit">
+                                <p>The Chirchiq or Chirchik is a river of Uzbekistan. It is 155 km in length and it has
+                                    an area of 14,900 km<sup>2</sup>.</p>
+                                <p>The river is formed at the confluence of the Chatkal River and Pskem River. It flows
+                                    through abouut 30 km of canyon in the upper reaches. Below the valley widens and
+                                    eventually joins the Syr Darya.</p>
+                            </div>
+                            <hr class="bg-gold">
+                            <div class="tour-img w-100 cities-img mb-2 bor-rad-2"
+                                 style="background-image: url(../img/uzb_nat6.jpg)"></div>
+                            <div class="post-item-rit">
+                                <p>The Aydar Lake is part of the man-made Aydar-Arnasay system of lakes, which covers an
+                                    area of 4,000 square kilometres (1,500 mi<sup>2</sup>). This system includes 3
+                                    brackish water lakes (Aydar Kul, Arnasay and Tuzkan) located in the saline
+                                    depressions of the south-eastern Kyzyl Kum (now in Uzbekistan and Kazakhstan). The
+                                    lakes are the unintentional byproduct of Soviet planning.</p>
+                                <p>Up to the middle of the last century the Arnasay lowland remained a dry Salt pan
+                                    during most of the year. Only in Spring, in the lowlands, would the small, ephemeral
+                                    Lake Tuzkan glisten briefly, disappearing in the hot weather.</p>
+                                <p>In the early sixties the Syr Darya was dammed up. Simultaneously the Chardarya
+                                    irrigation dam was constructed. Floodgates were provided in the dam for flood
+                                    control, and when in 1969 a raging flood occurred, these were opened as the dam's
+                                    capacity was inadequate to cope with the flow. Between February 1969 and February
+                                    1970 almost 60% of the Syr Darya's average annual water flow (21 km<sup>3</sup>) was
+                                    drained from the Chardarya Reservoir into the Arnasay lowland. In such a way new
+                                    lakes were unintentionally created. Since 1969 the Aydar Lake has regularly received
+                                    the waters of the Syr Darya River when they overflow the capacity of the Chardarya
+                                    Reservoir. This has gradually filled up the natural cavity of Arnasay lowland to
+                                    create the second largest lake in the region (after the remains of the Aral Sea).
+                                </p>
+                                <p>In 2005 the Aydar Lake contained 44.3 cubic kilometers of water. Today the area of
+                                    the Aydar Lake amounts 3,000 square kilometres (1,200 mi<sup>2</sup>). It is nearly
+                                    250 km (160 miles) long and up to 15 km (9 miles) wide. The mineralization of the
+                                    water in the Aydar Lake averages only 2 grams per liter (2,000 ppm).</p>
+                                <p>Many sorts of fish including the (Sazan) (Cyprinus caprio), Pike perch (Stizostedion
+                                    lucioperca), Bream (Abramis brama), Cat-fish (Silurus glanis), Hzereh (Aspius
+                                    aspius), Chehon (Pelecus cultratus) Ophidian fish (Channa argus) were introduced to
+                                    the Lake, which nowadays works as a source of industrial fishing. The lake system
+                                    provides between 760 and 2,000 tones of fish annually (according to statistical data
+                                    between 1994 and 2001).</p>
+                                <p>In addition to fauna common in the Kyzyl Kum, there are many kinds of water birds
+                                    migrating from the Aral Sea that make their homes around the lake.</p>
+                                <p>The Aydar Lake is located away from inhabited localities, therefore there is perfect
+                                    silence around the lake. At the present time 345 families (approx. 1,760 people)
+                                    reside near the lake.</p>
+                                <p>The region of the Aydar Lake is an area of great potential for fishing, yurting and
+                                    camel-back riding tourist activities.</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+</main>
+<footer class="bg-black py-5">
+    <div class="container d-flex flex-wrap justify-content-between">
+        <div class="col-md-4">
+            <span class="h3 color-white font-light mb-4 d-block">О нас</span>
+            <span class="text-14 color-grey mb-4">Мы тепло приветствуем вас в Узбекистане и Центральной Азии, сердце Великого шелкового пути!</span>
+            <hr class="bg-grey">
+        </div>
+        <div class="col-md-4 pe-md-4 ps-md-4">
+            <span class="color-white font-light h3 mb-4 d-block">
+                Социальные сети
+            </span>
+            <div class="social">
+                <a href="#" class="bg-facebook"><i class="fa-brands fa-facebook-f" style="color: white"></i></a>
+                <a href="#" class="bg-telegram"><i class="fa-brands fa-telegram" style="color: white"></i></a>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <span class="h3 color-white font-light mb-4 d-block">О нас</span>
+            <span class="color-grey mb-2 d-block"><i class="fa-solid fa-location-dot color-grey me-2"></i>Ул. Амир Темур, Ташкент, Узбекистан.</span>
+            <a href="info@m.uz" class="color-grey mb-2 d-block"><i class="fa-solid fa-envelope color-grey me-2"></i>info@.uz</a>
+            <a href="tel:998999999999" class="color-grey mb-2 d-block"><i class="fa-solid fa-phone color-grey me-2"></i>+998
+                99 999-99-99</a>
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -536,6 +536,35 @@ body.active {
     display: inline-block;
 }
 
+.tour-img .swiper-button-next {
+    right: 2px;
+}
+
+.tour-img .swiper-button-prev {
+    left: 2px;
+}
+
+.tour-img .swiper-button-prev, .tour-img .swiper-button-next {
+    top: 50%;
+}
+
+.attr-bg {
+    background-size: cover;
+    background-attachment: fixed;
+    height: 50vh;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.attraction .tour-img {
+    height: 500px;
+}
+
+.my-exp  {
+    margin: 5px 5px 15px 5px;
+}
+
 @-webkit-keyframes arrow-movement {
     0% {
         opacity: 0;
@@ -574,6 +603,10 @@ body.active {
 }
 
 @media (max-width: 768px) {
+    .tour-img .swiper-button-next, .tour-img .swiper-button-prev {
+        display: flex;
+    }
+
     .swiper-button-next, .swiper-button-prev {
         display: none;
     }

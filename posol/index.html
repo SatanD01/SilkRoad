@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta charset="UTF-8">
+    <title>Посольства Узбекистана</title>
+    <!--  links  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="../css/style.css">
+
+    <!--  scripts  -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://kit.fontawesome.com/d46c800a71.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="../js/script.js"></script>
+</head>
+<body>
+
+<div class="menu">
+    <div class="d-flex flex-column">
+        <div class="menu-exit p-4">
+            <a href="../index.html" class="font-light h3">Logo</a>
+            <i class="fa-solid fa-xmark"></i>
+        </div>
+        <div class="menu-items d-flex flex-column">
+            <a href="../index.html" class="m-item text-18 font-light px-4 py-2">Главная</a>
+            <a href="../tours/tours.html" class="m-item text-18 font-light px-4 py-2">Туры</a>
+            <div class="m-item accordion accordion-flush" id="accordionFlushExample">
+                <div class="accordion-item">
+                    <span class="accordion-header" id="flush-headingOne">
+                        <button class="text-18 px-4 py-2 shadow-none bor-none p-0 font-light accordion-button collapsed"
+                                type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne"
+                                aria-expanded="false" aria-controls="flush-collapseOne">
+                            Направления
+                        </button>
+                    </span>
+                    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                         data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body d-flex p-0 flex-column">
+                            <div class="accordion-item">
+                                <span class="accordion-header" id="hotels-headingOne">
+                                    <button class="text-18 px-4 py-2 shadow-none bor-none p-0 font-light accordion-button collapsed"
+                                            type="button" data-bs-toggle="collapse" data-bs-target="#hotels-collapseOne"
+                                            aria-expanded="false" aria-controls="hotels-collapseOne">
+                                        Отели Узбекистана
+                                    </button>
+                                </span>
+                                <div id="hotels-collapseOne" class="accordion-collapse collapse"
+                                     aria-labelledby="hotels-headingOne" data-bs-parent="#hotelsFlushExample">
+                                    <div class="accordion-body d-flex p-0 flex-column">
+                                        <a class="m-item text-18 font-light px-4 ps-5 py-2"
+                                           href="../hotels/tashkent.html">Отели Ташкента</a>
+                                        <a class="m-item text-18 font-light px-4 ps-5 py-2"
+                                           href="../hotels/tashkent.html">Отели Самарканда</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <span class="accordion-header" id="attr-headingOne">
+                                    <button class="text-18 px-4 py-2 shadow-none bor-none p-0 font-light accordion-button collapsed"
+                                            type="button" data-bs-toggle="collapse" data-bs-target="#attr-collapseOne"
+                                            aria-expanded="false" aria-controls="attr-collapseOne">
+                                        Достопримечательности Узбекистана
+                                    </button>
+                                </span>
+                                <div id="attr-collapseOne" class="accordion-collapse collapse"
+                                     aria-labelledby="attr-headingOne" data-bs-parent="#attrFlushExample">
+                                    <div class="accordion-body d-flex p-0 flex-column">
+                                        <a class="m-item text-18 font-light px-4 ps-5 py-2"
+                                           href="../attraction/tashkent.html">Достопримечательности
+                                            Ташкента</a>
+                                        <a class="m-item text-18 font-light px-4 ps-5 py-2"
+                                           href="../attraction/tashkent.html">Достопримечательности
+                                            Самарканда</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="m-item text-18 font-light px-4 ps-5 py-2" href="../visa/index.html">Виза в Узбекистан</a>
+                            <a class="m-item text-18 font-light px-4 ps-5 py-2" href="../kitchen/index.html">Национальная
+                                кухня</a>
+                            <a class="m-item text-18 font-light px-4 ps-5 py-2" href="#">Посольства Узбекистана</a>
+                            <a class="m-item text-18 font-light px-4 ps-5 py-2" href="../fauna/index.html">Флора и Фауна</a>
+                            <a class="m-item text-18 font-light px-4 ps-5 py-2" href="../control/index.html">Таможенные правила</a>
+                            <a class="m-item text-18 font-light px-4 ps-5 py-2" href="#">Пограничные пункты</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="m-item text-18 font-light px-4 py-2">Транспорт</a>
+            <a href="#" class="m-item text-18 font-light px-4 py-2">Блог</a>
+            <a href="#" class="m-item text-18 font-light px-4 py-2">Галерея</a>
+            <a href="#" class="m-item text-18 font-light px-4 py-2">О нас</a>
+            <a href="#" class="m-item text-18 font-light px-4 py-2">Контакты</a>
+        </div>
+    </div>
+</div>
+
+<header class="bg-black">
+    <div class="container py-3 d-flex justify-content-between align-items-center">
+        <a href="../index.html" class="text-18 color-gold">
+            Logo
+        </a>
+        <div class="menu-btn">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <div class="nav-header d-flex align-items-center">
+            <a href="../index.html" class="br-r text-14 color-white">Главная</a>
+            <a href="../tours/tours.html" class="br-r text-14 color-white">Туры</a>
+            <div class="nav-dd dropdown">
+                <a href="#" class="br-r text-14 color-white dropdown-toggle" data-bs-toggle="dropdown" role="button"
+                   data-bs-auto-close="outside" aria-expanded="false">Направления</a>
+                <ul class="dropdown-menu bg-black bor-rad-1 p-2">
+                    <li class="btn-group dropend">
+                        <button type="button"
+                                class="btn dropdown-item shadow-none bor-none dropdown-toggle hover-gold bg-black"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                            Гостиницы Узбекистана
+                        </button>
+                        <ul class="dropdown-menu bg-black bor-rad-1 p-2">
+                            <li><a class="dropdown-item color-white hover-gold bg-black" href="../hotels/tashkent.html">Гостиница
+                                Ташкента</a></li>
+                            <li><a class="dropdown-item color-white hover-gold bg-black" href="../hotels/tashkent.html">Гостиница
+                                Самарканда</a></li>
+                            <li><a class="dropdown-item color-white hover-gold bg-black" href="../hotels/tashkent.html">Гостиница
+                                Бухары</a></li>
+                        </ul>
+                    </li>
+                    <li class="btn-group dropend">
+                        <button type="button"
+                                class="btn dropdown-item shadow-none bor-none dropdown-toggle hover-gold bg-black"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                            Достопримечательности
+                        </button>
+                        <ul class="dropdown-menu bg-black bor-rad-1 p-2">
+                            <li><a class="dropdown-item color-white hover-gold bg-black"
+                                   href="../attraction/tashkent.html">Достопримечательности
+                                Ташкента</a></li>
+                            <li><a class="dropdown-item color-white hover-gold bg-black"
+                                   href="../attraction/tashkent.html">Достопримечательности
+                                Самарканда</a></li>
+                            <li><a class="dropdown-item color-white hover-gold bg-black"
+                                   href="../attraction/tashkent.html">Достопримечательности
+                                Бухары</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="dropdown-item color-white hover-gold bg-black" href="../visa/index.html">Виза в
+                        Узбекистан</a></li>
+                    <li><a class="dropdown-item color-white hover-gold bg-black" href="../kitchen/index.html">Национальная
+                        кухня</a></li>
+                    <li><a class="dropdown-item color-white hover-gold bg-black" href="#">Посольства Узбекистана</a>
+                    </li>
+                    <li><a class="dropdown-item color-white hover-gold bg-black" href="../fauna/index.html">Флора и Фауна</a></li>
+                    <li><a class="dropdown-item color-white hover-gold bg-black" href="../control/index.html">Таможенные правила</a></li>
+                    <li><a class="dropdown-item color-white hover-gold bg-black" href="#">Пограничные пункты</a></li>
+                </ul>
+            </div>
+            <a href="#" class="br-r text-14 color-white">Транспорт</a>
+            <a href="#" class="br-r text-14 color-white">Блог</a>
+            <a href="#" class="br-r text-14 color-white">Галерея</a>
+            <a href="#" class="br-r text-14 color-white">О нас</a>
+            <a href="#" class="br-r text-14 color-white">Контакты</a>
+        </div>
+    </div>
+</header>
+<main>
+    <div class="attr-bg mb-3 w-100" style="background-image: url(../img/whitehome.jpg)">
+        <div class="w-100 h-100 d-flex align-items-center" style="background-color: rgba(0,0,0,0.31)">
+            <span class="container h2 d-block text-center color-white">Посольства Узбекистана</span>
+        </div>
+    </div>
+    <section class="bread-crumb mb-4">
+        <div class="container">
+            <div class="my-4">
+                <a href="../index.html" class="color-grey text-14">Главная</a>
+                <span class="color-grey text-14"> / </span>
+                <span class="color-gold text-14">Посольства Узбекистана</span>
+            </div>
+        </div>
+    </section>
+    <section class="cities-section mb-5">
+        <div class="container">
+            <div>
+                <div class="col-lg-12 mb-5 attraction">
+                    <div class="bg-white drop-shadow bor-rad-2 pb-5">
+                        <div class="tour-text px-3">
+                            <div class="tour-img w-100 cities-img mb-2 bor-rad-2"
+                                 style="background-image: url(../img/whitehome.jpg)"></div>
+                            <div class="post-item-rit">
+                                <p><b>Uzbekistan Embassy in Afghanistan</b></p>
+                                <p>Address: Wazir Akbar Khan 13th street, 3rd row, house 14, Kabul</p>
+                                <p>Telephone: (+9320) 230-01-24</p>
+                                <p>Website: www.afghan.mfa.uz</p>
+
+                                <p><b>Uzbekistan Embassy in Austria</b></p>
+                                <p>Address: Potzleinsdorferstrasse 49, Vienna</p>
+                                <p>Telephone: (+431) 315-39-94 / 14</p>
+                                <p>Website: www.usbekistan.at</p>
+
+                                <p><b>Uzbekistan Embassy in Azerbaijan</b></p>
+                                <p>Address: Badamdar, 1/ 9, House-437, Baku</p>
+                                <p>Telephone: (+99412) 497-25-49 / 52</p>
+                                <p>Website: www.uzembassy.az</p>
+
+                                <p><b>Uzbekistan Embassy in Belgium</b></p>
+                                <p>Address: EP Av. F.Roosevelt, 99, 1050, Brussels</p>
+                                <p>Telephone: (+322) 672-88-44</p>
+                                <p>Website: www.belgium.mfa.uz/en</p>
+
+                                <p><b>Uzbekistan Embassy in China</b></p>
+                                <p>Address: № 11 San Li Tun Bei Xiao Jie, Beijing</p>
+                                <p>Telephone: (+8610) 6532-6305</p>
+                                <p>Website: www.embassy-uz.cn</p>
+
+                                <p><b>Uzbekistan Embassy in Egypt</b></p>
+                                <p>Address: EP 18, Sad El-Aali St., Dokki-Cairo</p>
+                                <p>Telephone: (+2023) 336-17-23, 336-45-16</p>
+                                <p>Website: www.uzembegypt.com</p>
+
+                                <p><b>Uzbekistan Embassy in France</b></p>
+                                <p>Address: EP 22, rue d'Aguesseau, 75008, Paris</p>
+                                <p>Telephone: (+331) 5330-0353</p>
+                                <p>Website: www.ouzbekistan.fr</p>
+
+                                <p><b>Uzbekistan Embassy in Germany</b></p>
+                                <p>Address: Perleberger Strasse 62, 10559 Berlin</p>
+                                <p>Telephone: (+4930) 394-09-80</p>
+                                <p>Website: www.uzbekistan.de</p>
+
+                                <p><b>Uzbekistan Embassy in Great Britain</b></p>
+                                <p>Address: 41 Holland Park, London, W11 3RP</p>
+                                <p>Telephone: (+44) 20-72-29-76-79</p>
+                                <p>Website: www.uzbekembassy.org</p>
+
+                                <p><b>Uzbekistan Embassy in India</b></p>
+                                <p>Address: EP 40, Dr. Radhakrishnan Marg Chanakyapuri, New Delhi, 110021</p>
+                                <p>Telephone: (+9111) 2467-0774, 2467-0775, 2410-5640</p>
+                                <p>Website: www.uzbekembassy.in</p>
+
+                                <p><b>Uzbekistan Embassy in Indonesia</b></p>
+                                <p>Address: Jl. Aditiyawarman No 25, Kebayoran Baru, Jakarta Selatan</p>
+                                <p>Telephone: (+6221) 720-09-50 / 72</p>
+                                <p>Website: www.uzbekistan-embassy.or.id</p>
+
+                                <p><b>Uzbekistan Embassy in Iran</b></p>
+                                <p>Address: Teheran, Pasdaran, Bustan/Nasdaran str.-21</p>
+                                <p>Telephone: (+9821) 2283-2071, 2229-1519</p>
+                                <p>Website: www.uzbekembassy.ir</p>
+
+                                <p><b>Uzbekistan Embassy in Israel</b></p>
+                                <p>Address: Moshe Sharet st., 31, Ramat Gan, 52413</p>
+                                <p>Telephone: (+9723) 672-23-71</p>
+                                <p>Website: www.uzbembassy.org.il</p>
+
+                                <p><b>Uzbekistan Embassy in Italy</b></p>
+                                <p>Address: Via Pompeo Magno 1, 00192 Roma</p>
+                                <p>Telephone: (+3906) 8786-0310</p>
+                                <p>Website: www.uzbekistanitalia.org</p>
+
+                                <p><b>Uzbekistan Embassy in Japan</b></p>
+                                <p>Address: 108-0074 Tokyo, Minato-ku, Takanawa 2-1-52</p>
+                                <p>Telephone: (+813) 362-772-166</p>
+                                <p>Website: www.uzb-emb.jp</p>
+
+                                <p><b>Uzbekistan Embassy in Kazakhstan</b></p>
+                                <p>Address: Komsomolsky quarter, Leyli-Mejnun str., 7, Astana</p>
+                                <p>Phone: (+77172) 95-42-52</p>
+                                <p>Website: www.uzembassy.kz</p>
+
+                                <p><b>Uzbekistan Embassy in the Republic of Korea</b></p>
+                                <p>Address: 27, Daesagwan-ro 11-gil, Yongsan-gu, Seoul</p>
+                                <p>Telephone: (+822) 574-65-54, 577-36-60</p>
+                                <p>Website: www.uzbekistan.or.kr</p>
+
+                                <p><b>Uzbekistan Embassy in Kyrgyzstan</b></p>
+                                <p>Address: 177, Aytmatov str. (ex. Mira str.), Bishkek</p>
+                                <p>Telephone: (+996-312) 98-62-95 / 96</p>
+                                <p>Website: www.uzbekistan.kg</p>
+
+                                <p><b>Uzbekistan Embassy in Kuwait</b></p>
+                                <p>Address: Mishref, Block 1, Street 7, Villa №4</p>
+                                <p>Telephone: (+965) 2539-6515</p>
+
+                                <p><b>Uzbekistan Embassy in Latvia</b></p>
+                                <p>Address: 11-11, Elizabetes str., 2 floor, Riga</p>
+                                <p>Telephone: (+37167) 32-23-46</p>
+                                <p>Website: www.uzbekistan.lv</p>
+
+                                <p><b>Uzbekistan Embassy in Malaysia</b></p>
+                                <p>Address: Jalan 6, Taman Ampang Utama, 68000, Selangor</p>
+                                <p>Telephone: (+603) 4253-2406</p>
+                                <p>Website: www.uzbekembassy.com.my</p>
+
+                                <p><b>Uzbekistan Embassy in Pakistan</b></p>
+                                <p>Address: House №40, Street Khayaban-e-Iqbal, Sector F-8/3, Islamabad</p>
+                                <p>Telephone: (+9251) 226-47-46</p>
+
+                                <p><b>Uzbekistan Embassy in Poland</b></p>
+                                <p>Address: 21, Kraski str., Warshaw</p>
+                                <p>Telephone: (+4822) 894-62-30</p>
+                                <p>Website: www.uzbekistan.pl</p>
+
+                                <p><b>Uzbekistan Embassy in the Russian Federation</b></p>
+                                <p>Address: 12, Pogorelsky str., Moscow</p>
+                                <p>Telephone: (+7499) 230-00-78</p>
+                                <p>Website: www.uzembassy.ru</p>
+
+                                <p><b>Uzbekistan Embassy in Saudi Arabia</b></p>
+                                <p>Address: Riyadh 11693, Riyadh city, area Sulaimania, Talha bin Al Barra str. Villa
+                                    №17</p>
+                                <p>Telephone: (+9661) 263-52-23</p>
+
+                                <p><b>Uzbekistan Embassy in Singapore</b></p>
+                                <p>Address: 20 Kramat Lane, United House, #04-01/02, Singapore</p>
+                                <p>Telephone: (+65) 6734-3942 / 43</p>
+                                <p>Website: www.singapore.mfa.uz/ru</p>
+
+                                <p><b>Uzbekistan Embassy in Spain</b></p>
+                                <p>Address: Paseo de la Castellana, 45, 4º, Madrid</p>
+                                <p>Telephone: (+3491) 310-16-39</p>
+                                <p>Website: www.uzbekembassy.es</p>
+
+                                <p><b>Uzbekistan Embassy in Tajikistan</b></p>
+                                <p>Address: 30, Sanoi str., Dushanbe</p>
+                                <p>Telephone: (+99237) 224-75-39, 224-99-03</p>
+
+                                <p><b>Uzbekistan Embassy in Turkey</b></p>
+                                <p>Address: Sancak Mah. 549. Sok. №3, Cankaya/Ankara</p>
+                                <p>Telephone: (+90312) 441-38-71</p>
+                                <p>Website: www.uzembassy.org.tr</p>
+
+                                <p><b>Uzbekistan Embassy in Turkmenistan</b></p>
+                                <p>Address: 50A, Georgly str., Ashgabat</p>
+                                <p>Telephone: (+99312) 36-90-62, 36-90-55</p>
+
+                                <p><b>Uzbekistan Embassy in UAE</b></p>
+                                <p>Address: Zone East 38/1, Plot 10/b, Muroor, Abu Dhabi</p>
+                                <p>Telephone: (+9712) 448-82-15</p>
+                                <p>Website: www.uzbekembassy.ae</p>
+
+                                <p><b>Uzbekistan Embassy in Ukraine</b></p>
+                                <p>Address: 16, Vladimirskaya str., Kiev, 01901</p>
+                                <p>Telephone: (+38044) 501-50-00</p>
+                                <p>Website: www.uzbekistan.org.ua/ru</p>
+
+                                <p><b>Uzbekistan Embassy in the USA</b></p>
+                                <p>Address: 1746 Massachusetts Avenue, N.W. Washington, D.C. 20036</p>
+                                <p>Telephone: (+1202) 887-5300</p>
+                                <p>Website: www.uzbekistan.org</p>
+
+                                <p><b>Uzbekistan Consulate General in Almaty</b></p>
+                                <p>Address: Beribaev str. 36, Almaty, Kazakhstan</p>
+                                <p>Phone: (+7727) 291-78-86</p>
+                                <p>Fax: (+7727) 291-10-55</p>
+
+                                <p><b>Uzbekistan Consulate General in Athens</b></p>
+                                <p>Address: 64 Demokratias Str., P.Psychiko 15254, Athens, Greece</p>
+                                <p>Tel: (30-210) 685-70-77</p>
+                                <p>Fax: (30-210) 683-62-85</p>
+                                <p>Website: www.greece.mfa.uz </p>
+                                <p>E-mail: embuzb@otenet.gr</p>
+
+                                <p><b>Uzbekistan Consulate General in Bangkok</b></p>
+                                <p>Address: 83/4, Soi Vithayu 1, Wireless Road, Lumpini, Pathumwan District, Bangkok
+                                    10330, Тhailand</p>
+                                <p>Tel: (662) 675-39-95, 675-39-96</p>
+                                <p>Fax: (662) 651-56-02</p>
+                                <p>Website: www.uzbinbkk.com</p>
+                                <p>Е-mail: ankhor@uzbinbkk.com</p>
+
+                                <p><b>Uzbekistan Consulate General in Dubai</b></p>
+                                <p>Address: P.O.Box; 50478, Street #3, Umm Hurair First, Bur Dubai, Dubai, United Arab
+                                    Emirates</p>
+                                <p>Tel: (9714) 370-60-60</p>
+                                <p>Fax: (9714) 370-60-63</p>
+                                <p>Website: www.uzbekistanconsulate.ae</p>
+                                <p>Е-mail: uzbekconsulate.ae@mail.ru</p>
+
+                                <p><b>Uzbekistan Consulate General in Frankfurt</b></p>
+                                <p>Address: Zeppelinallee 31, 60325 Frankfurt am Main, Germany</p>
+                                <p>Tel: (4969) 915-011-110</p>
+                                <p>Fax: (4969) 915-011-115</p>
+                                <p>Website: www.gk-usbekistan.de</p>
+                                <p>E-mail: gk.usbekistan@gmail.com</p>
+
+                                <p><b>Uzbekistan Consulate General in Jeddah</b></p>
+                                <p>Address: Al-Naeem/4 District, Abu Al-Hajjaj Al-Mosali Street, Villa #7. P.O. Box
+                                    50036, Jeddah 23621, Saudi Arabia</p>
+                                <p>Tel: (96612) 607-72-50</p>
+                                <p>Fax: (96612) 607-72-60</p>
+                                <p>Website: www.uzbekconsuljeddah.com</p>
+                                <p>Е-mail: gkjiddauz@mail.ru</p>
+
+                                <p><b>Uzbekistan Consulate General in Istanbul</b></p>
+                                <p>Address: Levent Mah. Levent Cad. Lale Sk. 8 Beşiktaş, İstanbul, Turkey</p>
+                                <p>Tel: (90212) 229-00-75, 323-20-37</p>
+                                <p>Fax: (90212) 323-20-40</p>
+                                <p>Website: www.uzconsulate.org.tr</p>
+                                <p>E-mail: uzbekconsul@yahoo.com</p>
+
+                                <p><b>Uzbekistan Consulate in Mazar-i-Sharif</b></p>
+                                <p>Address: Afghanistan, Mazori Sharif, 3-nohiya, Guzari Khoja Hayroniya 44</p>
+                                <p>Tel: (9350) 200-27-13, (8376) 502-14-02</p>
+                                <p>E-mail: uzmazarconsulate@rambler.ru</p>
+
+                                <p><b>Uzbekistan Consulate General in New York</b></p>
+                                <p>Address: 801 2nd Avenue, 20th Floor, New York, NY 10017, USA</p>
+                                <p>Tel: (1212) 754-74-03</p>
+                                <p>Fax: (1212) 838-9812</p>
+                                <p>Website: www.uzbekconsulny.org</p>
+                                <p>E-mail: info@uzbekconsulny.org</p>
+
+                                <p><b>Uzbekistan Consulate General in Novosibirsk</b></p>
+                                <p>Address: 55B, Lomonosova Str., Novosibirsk</p>
+                                <p>Tel: (7383) 246-04-85</p>
+                                <p>Fax: (7383) 246-04-62</p>
+                                <p>Website: www.uzbekistan.nsk.ru</p>
+                                <p>E-mail: consul2011@inbox.ru</p>
+
+                                <p><b>Uzbekistan Consulate General in Shanghai</b></p>
+                                <p>Address: №258, Wu Song Road, Hong Kou District Yao Jiang Development Centre, Room
+                                    801, Shanghai, China</p>
+                                <p>Tel: (8621) 630-718-96</p>
+                                <p>Fax: (8621) 632-460-99</p>
+                                <p>Website: www.uzconsul-sh.com</p>
+                                <p>E-mail: cg_uzbekistan@126.com</p>
+
+                                <p><b>Permanent Mission of the Republic of Uzbekistan to the United Nations</b></p>
+                                <p>Address: 801 2nd Avenue, 20th Floor, New York, NY 10017, USA</p>
+                                <p>Tel: (1212) 482-42-42</p>
+                                <p>Fax: (1212) 486-79-98</p>
+                                <p>Website: www.un.int/uzbekistan</p>
+                                <p>E-mail: uzbekistan@un.int</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+</main>
+<footer class="bg-black py-5">
+    <div class="container d-flex flex-wrap justify-content-between">
+        <div class="col-md-4">
+            <span class="h3 color-white font-light mb-4 d-block">О нас</span>
+            <span class="text-14 color-grey mb-4">Мы тепло приветствуем вас в Узбекистане и Центральной Азии, сердце Великого шелкового пути!</span>
+            <hr class="bg-grey">
+        </div>
+        <div class="col-md-4 pe-md-4 ps-md-4">
+            <span class="color-white font-light h3 mb-4 d-block">
+                Социальные сети
+            </span>
+            <div class="social">
+                <a href="#" class="bg-facebook"><i class="fa-brands fa-facebook-f" style="color: white"></i></a>
+                <a href="#" class="bg-telegram"><i class="fa-brands fa-telegram" style="color: white"></i></a>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <span class="h3 color-white font-light mb-4 d-block">О нас</span>
+            <span class="color-grey mb-2 d-block"><i class="fa-solid fa-location-dot color-grey me-2"></i>Ул. Амир Темур, Ташкент, Узбекистан.</span>
+            <a href="info@m.uz" class="color-grey mb-2 d-block"><i class="fa-solid fa-envelope color-grey me-2"></i>info@.uz</a>
+            <a href="tel:998999999999" class="color-grey mb-2 d-block"><i class="fa-solid fa-phone color-grey me-2"></i>+998
+                99 999-99-99</a>
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
+</body>
+</html>

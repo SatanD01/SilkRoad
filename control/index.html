@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta charset="UTF-8">
+    <title>Таможенные правила</title>
+    <!--  links  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="../css/style.css">
+
+    <!--  scripts  -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://kit.fontawesome.com/d46c800a71.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="../js/script.js"></script>
+</head>
+<body>
+
+<div class="menu">
+    <div class="d-flex flex-column">
+        <div class="menu-exit p-4">
+            <a href="../index.html" class="font-light h3">Logo</a>
+            <i class="fa-solid fa-xmark"></i>
+        </div>
+        <div class="menu-items d-flex flex-column">
+            <a href="../index.html" class="m-item text-18 font-light px-4 py-2">Главная</a>
+            <a href="../tours/tours.html" class="m-item text-18 font-light px-4 py-2">Туры</a>
+            <div class="m-item accordion accordion-flush" id="accordionFlushExample">
+                <div class="accordion-item">
+                    <span class="accordion-header" id="flush-headingOne">
+                        <button class="text-18 px-4 py-2 shadow-none bor-none p-0 font-light accordion-button collapsed"
+                                type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne"
+                                aria-expanded="false" aria-controls="flush-collapseOne">
+                            Направления
+                        </button>
+                    </span>
+                    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                         data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body d-flex p-0 flex-column">
+                            <div class="accordion-item">
+                                <span class="accordion-header" id="hotels-headingOne">
+                                    <button class="text-18 px-4 py-2 shadow-none bor-none p-0 font-light accordion-button collapsed"
+                                            type="button" data-bs-toggle="collapse" data-bs-target="#hotels-collapseOne"
+                                            aria-expanded="false" aria-controls="hotels-collapseOne">
+                                        Отели Узбекистана
+                                    </button>
+                                </span>
+                                <div id="hotels-collapseOne" class="accordion-collapse collapse"
+                                     aria-labelledby="hotels-headingOne" data-bs-parent="#hotelsFlushExample">
+                                    <div class="accordion-body d-flex p-0 flex-column">
+                                        <a class="m-item text-18 font-light px-4 ps-5 py-2"
+                                           href="../hotels/tashkent.html">Отели Ташкента</a>
+                                        <a class="m-item text-18 font-light px-4 ps-5 py-2"
+                                           href="../hotels/tashkent.html">Отели Самарканда</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <span class="accordion-header" id="attr-headingOne">
+                                    <button class="text-18 px-4 py-2 shadow-none bor-none p-0 font-light accordion-button collapsed"
+                                            type="button" data-bs-toggle="collapse" data-bs-target="#attr-collapseOne"
+                                            aria-expanded="false" aria-controls="attr-collapseOne">
+                                        Достопримечательности Узбекистана
+                                    </button>
+                                </span>
+                                <div id="attr-collapseOne" class="accordion-collapse collapse"
+                                     aria-labelledby="attr-headingOne" data-bs-parent="#attrFlushExample">
+                                    <div class="accordion-body d-flex p-0 flex-column">
+                                        <a class="m-item text-18 font-light px-4 ps-5 py-2"
+                                           href="../attraction/tashkent.html">Достопримечательности
+                                            Ташкента</a>
+                                        <a class="m-item text-18 font-light px-4 ps-5 py-2"
+                                           href="../attraction/tashkent.html">Достопримечательности
+                                            Самарканда</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="m-item text-18 font-light px-4 ps-5 py-2" href="../visa/index.html">Виза в
+                                Узбекистан</a>
+                            <a class="m-item text-18 font-light px-4 ps-5 py-2" href="../kitchen/index.html">Национальная
+                                кухня</a>
+                            <a class="m-item text-18 font-light px-4 ps-5 py-2" href="#">Посольства Узбекистана</a>
+                            <a class="m-item text-18 font-light px-4 ps-5 py-2" href="../fauna/index.html">Флора и
+                                Фауна</a>
+                            <a class="m-item text-18 font-light px-4 ps-5 py-2" href="../control/index.html">Таможенные правила</a>
+                            <a class="m-item text-18 font-light px-4 ps-5 py-2" href="#">Пограничные пункты</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="m-item text-18 font-light px-4 py-2">Транспорт</a>
+            <a href="#" class="m-item text-18 font-light px-4 py-2">Блог</a>
+            <a href="#" class="m-item text-18 font-light px-4 py-2">Галерея</a>
+            <a href="#" class="m-item text-18 font-light px-4 py-2">О нас</a>
+            <a href="#" class="m-item text-18 font-light px-4 py-2">Контакты</a>
+        </div>
+    </div>
+</div>
+
+<header class="bg-black">
+    <div class="container py-3 d-flex justify-content-between align-items-center">
+        <a href="../index.html" class="text-18 color-gold">
+            Logo
+        </a>
+        <div class="menu-btn">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <div class="nav-header d-flex align-items-center">
+            <a href="../index.html" class="br-r text-14 color-white">Главная</a>
+            <a href="../tours/tours.html" class="br-r text-14 color-white">Туры</a>
+            <div class="nav-dd dropdown">
+                <a href="#" class="br-r text-14 color-white dropdown-toggle" data-bs-toggle="dropdown" role="button"
+                   data-bs-auto-close="outside" aria-expanded="false">Направления</a>
+                <ul class="dropdown-menu bg-black bor-rad-1 p-2">
+                    <li class="btn-group dropend">
+                        <button type="button"
+                                class="btn dropdown-item shadow-none bor-none dropdown-toggle hover-gold bg-black"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                            Гостиницы Узбекистана
+                        </button>
+                        <ul class="dropdown-menu bg-black bor-rad-1 p-2">
+                            <li><a class="dropdown-item color-white hover-gold bg-black" href="../hotels/tashkent.html">Гостиница
+                                Ташкента</a></li>
+                            <li><a class="dropdown-item color-white hover-gold bg-black" href="../hotels/tashkent.html">Гостиница
+                                Самарканда</a></li>
+                            <li><a class="dropdown-item color-white hover-gold bg-black" href="../hotels/tashkent.html">Гостиница
+                                Бухары</a></li>
+                        </ul>
+                    </li>
+                    <li class="btn-group dropend">
+                        <button type="button"
+                                class="btn dropdown-item shadow-none bor-none dropdown-toggle hover-gold bg-black"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                            Достопримечательности
+                        </button>
+                        <ul class="dropdown-menu bg-black bor-rad-1 p-2">
+                            <li><a class="dropdown-item color-white hover-gold bg-black"
+                                   href="../attraction/tashkent.html">Достопримечательности
+                                Ташкента</a></li>
+                            <li><a class="dropdown-item color-white hover-gold bg-black"
+                                   href="../attraction/tashkent.html">Достопримечательности
+                                Самарканда</a></li>
+                            <li><a class="dropdown-item color-white hover-gold bg-black"
+                                   href="../attraction/tashkent.html">Достопримечательности
+                                Бухары</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="dropdown-item color-white hover-gold bg-black" href="../visa/index.html">Виза в
+                        Узбекистан</a></li>
+                    <li><a class="dropdown-item color-white hover-gold bg-black" href="../kitchen/index.html">Национальная
+                        кухня</a></li>
+                    <li><a class="dropdown-item color-white hover-gold bg-black" href="../posol/index.html">Посольства
+                        Узбекистана</a>
+                    </li>
+                    <li><a class="dropdown-item color-white hover-gold bg-black" href="../fauna/index.html">Флора и
+                        Фауна</a></li>
+                    <li><a class="dropdown-item color-white hover-gold bg-black" href="../control/index.html">Таможенные правила</a></li>
+                    <li><a class="dropdown-item color-white hover-gold bg-black" href="#">Пограничные пункты</a></li>
+                </ul>
+            </div>
+            <a href="#" class="br-r text-14 color-white">Транспорт</a>
+            <a href="#" class="br-r text-14 color-white">Блог</a>
+            <a href="#" class="br-r text-14 color-white">Галерея</a>
+            <a href="#" class="br-r text-14 color-white">О нас</a>
+            <a href="#" class="br-r text-14 color-white">Контакты</a>
+        </div>
+    </div>
+</header>
+<main>
+    <div class="attr-bg mb-3 w-100" style="background-image: url(../img/control.jpg)">
+        <div class="w-100 h-100 d-flex align-items-center" style="background-color: rgba(0,0,0,0.31)">
+            <span class="container h2 d-block text-center color-white">Таможенные правила</span>
+        </div>
+    </div>
+    <section class="bread-crumb mb-4">
+        <div class="container">
+            <div class="my-4">
+                <a href="../index.html" class="color-grey text-14">Главная</a>
+                <span class="color-grey text-14"> / </span>
+                <span class="color-gold text-14">Таможенные правила</span>
+            </div>
+        </div>
+    </section>
+    <section class="cities-section mb-5">
+        <div class="container">
+            <div>
+                <div class="col-lg-12 mb-5 attraction">
+                    <div class="bg-white drop-shadow bor-rad-2 pb-5">
+                        <div class="tour-text px-3">
+                            <div class="tour-img w-100 cities-img mb-2 bor-rad-2"
+                                 style="background-image: url(../img/control.jpg)"></div>
+                            <div class="post-item-rit">
+                                <p>Since January 1, 2018, a double corridor system has been introduced in the
+                                    international airports of the Republic of Uzbekistan: <b
+                                            style="color:green">"green"</b> and <b style="color:red">"red"</b>, for
+                                    individuals to pass customs control.</p>
+                                <p>Any person can go through the <b style="color:green">"green"</b> corridor, without
+                                    completing the customs declaration, if:</p>
+                                <ul>
+                                    <li> imported foreign currency does not exceed the equivalent of 2,000 (two
+                                        thousand) US dollars;
+                                    </li>
+                                    <li> the cost and (or) the number of imported goods do not exceed the norms not
+                                        subject to customs payments established by law;
+                                    </li>
+                                    <li> there are no goods whose import or export is prohibited or restricted in
+                                        accordance with the law.
+                                    </li>
+                                </ul>
+                                <p>The choice of a <b style="color:green">"green"</b> corridor means an application to
+                                    the customs authority that an individual does not have goods or a foreign currency
+                                    in cash that is subject to a written declaration.</p>
+                                <p>In case of detection of goods or cash in foreign currency subject to written
+                                    declaration, such person will be held liable in accordance with the procedure
+                                    established by law.</p>
+                                <p>When choosing a <b style="color:red">"red"</b> corridor, an individual must fill out
+                                    a customs declaration, indicate in it the availability of goods, cash foreign
+                                    currency and other items subject to written declaration, and present it to a customs
+                                    officer.</p>
+                                <p>The message in the declaration of unreliable information entails responsibility in
+                                    accordance with the current legislation.
+                                    If there is any doubt about the correctness of the choice, it is better to follow
+                                    the <b style="color:red">"red"</b> corridor or contact the customs officer.
+                                    More detailed information on customs legislation is located in front of the entrance
+                                    of the <b style="color:green">"green"</b> and <b style="color:red">"red"</b>
+                                    corridors.</p>
+                            </div>
+                            <hr class="bg-gold">
+                            <div class="post-item-rit">
+                                <p>Import of cash foreign currency to the Republic of Uzbekistan is carried out without
+                                    restrictions.</p>
+                                <p>The amount of cash foreign currency, equal to or not exceeding the equivalent of 2000
+                                    (two thousand) US dollars, is not subject to written declaration.</p>
+                                <p>The entire amount of foreign currency in cash exceeding the equivalent of 2,000 (two
+                                    thousand) US dollars is subject to mandatory written declaration when importing and
+                                    exporting.</p>
+                                <p>Export in excess of the established sum is carried out:</p>
+                                <ul>
+                                    <li>Residents – on the basis of the permission of the Central Bank of the Republic
+                                        of Uzbekistan;
+                                    </li>
+                                    <li>Non-residents – on the basis of a passenger customs declaration filled in at the
+                                        entrance to the Republic of Uzbekistan, in which the amount of foreign currency
+                                        in cash is indicated not less than the amount of cash exported in foreign
+                                        currency.
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="post-item-rit">
+                                <p>The cash national currency of the Republic of Uzbekistan, more than 5 times the
+                                    minimum wage, is subject to mandatory written declaration.</p>
+                                <p>Import and export of the national currency of the Republic of Uzbekistan is allowed
+                                    within the amount not exceeding 50 times of minimum wage.</p>
+                            </div>
+                            <div class="post-item-rit">
+                                <ul>
+                                    <li>a) narcotic drugs, psychotropic substances and precursors (also prohibited for export);
+                                    </li><li>b) works of printing, manuscripts, clichés, drawings, photographs, films, negatives, movies, video, and audio products, recordings, audio materials aimed at undermining the state and social system, violation of territorial integrity, political independence and state sovereignty, propagandizing war , terrorism, violence, national exclusiveness and religious hatred, racism and its variety (anti-Semitism, fascism), pornographic materials;
+                                </li><li>c) portable laser emitters;
+                                </li><li>d) explosive and pyrotechnic means;
+                                </li><li>e) unmanned aerial vehicles.
+                                </li></ul>
+                            </div>
+                            <div class="post-item-rit">
+                                <p>Allowed amount:</p>
+                                <ul>
+                                    <li> up to 10 medications of different names and not more than 5 packs of medicinal products of each of them;
+                                    </li><li> medical products in an amount not exceeding 5 units.
+                                </li></ul>
+                                <p>In this case, one package should contain:</p>
+                                <ul>
+                                    <li> for solid (tablets, pellets, granules, powders, capsules) dosage forms - not more than 100 units;
+                                    </li><li> for powders used for the preparation of a solution - not more than 500 g;
+                                </li><li> for homeopathic medicines in the form of granules - not more than 50 g;
+                                </li><li> for infusion solutions and solutions taken orally - not more than 500 ml;
+                                </li><li> solutions for injection - no more than 10 ampoules or not more than 10 vials;
+                                </li><li> for external drugs - no more than 200 ml or 200 g.
+                                </li></ul>
+                                <p>Medicinal products and medical products must be in the manufacturer's packaging.</p>
+                                <p>For further information, please visit <a href="http://www.customs.uz" target="_blank">www.customs.uz</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+</main>
+<footer class="bg-black py-5">
+    <div class="container d-flex flex-wrap justify-content-between">
+        <div class="col-md-4">
+            <span class="h3 color-white font-light mb-4 d-block">О нас</span>
+            <span class="text-14 color-grey mb-4">Мы тепло приветствуем вас в Узбекистане и Центральной Азии, сердце Великого шелкового пути!</span>
+            <hr class="bg-grey">
+        </div>
+        <div class="col-md-4 pe-md-4 ps-md-4">
+            <span class="color-white font-light h3 mb-4 d-block">
+                Социальные сети
+            </span>
+            <div class="social">
+                <a href="#" class="bg-facebook"><i class="fa-brands fa-facebook-f" style="color: white"></i></a>
+                <a href="#" class="bg-telegram"><i class="fa-brands fa-telegram" style="color: white"></i></a>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <span class="h3 color-white font-light mb-4 d-block">О нас</span>
+            <span class="color-grey mb-2 d-block"><i class="fa-solid fa-location-dot color-grey me-2"></i>Ул. Амир Темур, Ташкент, Узбекистан.</span>
+            <a href="info@m.uz" class="color-grey mb-2 d-block"><i class="fa-solid fa-envelope color-grey me-2"></i>info@.uz</a>
+            <a href="tel:998999999999" class="color-grey mb-2 d-block"><i class="fa-solid fa-phone color-grey me-2"></i>+998
+                99 999-99-99</a>
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
