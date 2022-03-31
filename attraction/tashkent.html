@@ -41,24 +41,6 @@
                          data-bs-parent="#accordionFlushExample">
                         <div class="accordion-body d-flex p-0 flex-column">
                             <div class="accordion-item">
-                                <span class="accordion-header" id="hotels-headingOne">
-                                    <button class="text-18 px-4 py-2 shadow-none bor-none p-0 font-light accordion-button collapsed"
-                                            type="button" data-bs-toggle="collapse" data-bs-target="#hotels-collapseOne"
-                                            aria-expanded="false" aria-controls="hotels-collapseOne">
-                                        Отели Узбекистана
-                                    </button>
-                                </span>
-                                <div id="hotels-collapseOne" class="accordion-collapse collapse"
-                                     aria-labelledby="hotels-headingOne" data-bs-parent="#hotelsFlushExample">
-                                    <div class="accordion-body d-flex p-0 flex-column">
-                                        <a class="m-item text-18 font-light px-4 ps-5 py-2"
-                                           href="../hotels/tashkent.html">Отели Ташкента</a>
-                                        <a class="m-item text-18 font-light px-4 ps-5 py-2"
-                                           href="../hotels/tashkent.html">Отели Самарканда</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-item">
                                 <span class="accordion-header" id="attr-headingOne">
                                     <button class="text-18 px-4 py-2 shadow-none bor-none p-0 font-light accordion-button collapsed"
                                             type="button" data-bs-toggle="collapse" data-bs-target="#attr-collapseOne"
@@ -86,11 +68,28 @@
                     </div>
                 </div>
             </div>
-            <a href="#" class="m-item text-18 font-light px-4 py-2">Транспорт</a>
-            <a href="#" class="m-item text-18 font-light px-4 py-2">Блог</a>
-            <a href="#" class="m-item text-18 font-light px-4 py-2">Галерея</a>
-            <a href="#" class="m-item text-18 font-light px-4 py-2">О нас</a>
-            <a href="#" class="m-item text-18 font-light px-4 py-2">Контакты</a>
+            <div class="accordion-item">
+                <span class="accordion-header" id="hotels-headingOne">
+                    <button class="text-18 px-4 py-2 shadow-none bor-none p-0 font-light accordion-button collapsed"
+                            type="button" data-bs-toggle="collapse" data-bs-target="#hotels-collapseOne"
+                            aria-expanded="false" aria-controls="hotels-collapseOne">
+                        Отели
+                    </button>
+                </span>
+                <div id="hotels-collapseOne" class="accordion-collapse collapse"
+                     aria-labelledby="hotels-headingOne" data-bs-parent="#hotelsFlushExample">
+                    <div class="accordion-body d-flex p-0 flex-column">
+                        <a class="m-item text-18 font-light px-4 ps-5 py-2"
+                           href="../hotels/tashkent.html">Отели Ташкента</a>
+                        <a class="m-item text-18 font-light px-4 ps-5 py-2"
+                           href="../hotels/tashkent.html">Отели Самарканда</a>
+                    </div>
+                </div>
+            </div>
+            <a href="../cars/index.html" class="m-item text-18 font-light px-4 py-2">Транспорт</a>
+            <a href="../blog/index.html" class="m-item text-18 font-light px-4 py-2">Блог</a>
+            <a href="../gallery/index.html" class="m-item text-18 font-light px-4 py-2">Галерея</a>
+            <a href="../about/index.html" class="m-item text-18 font-light px-4 py-2">О нас</a>
         </div>
     </div>
 </div>
@@ -110,21 +109,6 @@
                 <a href="#" class="br-r text-14 color-white dropdown-toggle" data-bs-toggle="dropdown" role="button"
                    data-bs-auto-close="outside" aria-expanded="false">Направления</a>
                 <ul class="dropdown-menu bg-black bor-rad-1 p-2">
-                    <li class="btn-group dropend">
-                        <button type="button"
-                                class="btn dropdown-item shadow-none bor-none dropdown-toggle hover-gold bg-black"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                            Гостиницы Узбекистана
-                        </button>
-                        <ul class="dropdown-menu bg-black bor-rad-1 p-2">
-                            <li><a class="dropdown-item color-white hover-gold bg-black" href="../hotels/tashkent.html">Гостиница
-                                Ташкента</a></li>
-                            <li><a class="dropdown-item color-white hover-gold bg-black" href="../hotels/tashkent.html">Гостиница
-                                Самарканда</a></li>
-                            <li><a class="dropdown-item color-white hover-gold bg-black" href="../hotels/tashkent.html">Гостиница
-                                Бухары</a></li>
-                        </ul>
-                    </li>
                     <li class="btn-group dropend">
                         <button type="button"
                                 class="btn dropdown-item shadow-none bor-none dropdown-toggle hover-gold bg-black"
@@ -149,17 +133,30 @@
                     <li><a class="dropdown-item color-white hover-gold bg-black" href="../checkpoints/index.html">Пограничные пункты</a></li>
                 </ul>
             </div>
-            <a href="#" class="br-r text-14 color-white">Транспорт</a>
-            <a href="#" class="br-r text-14 color-white">Блог</a>
-            <a href="#" class="br-r text-14 color-white">Галерея</a>
-            <a href="#" class="br-r text-14 color-white">О нас</a>
-            <a href="#" class="br-r text-14 color-white">Контакты</a>
+            <div class="nav-dd dropdown">
+                <a href="#" class="br-r text-14 color-white dropdown-toggle" data-bs-toggle="dropdown" role="button"
+                   data-bs-auto-close="outside" aria-expanded="false">Отели</a>
+                <ul class="dropdown-menu bg-black bor-rad-1 p-2">
+                    <li><a class="dropdown-item color-white hover-gold bg-black" href="../hotels/tashkent.html">Гостиница
+                        Ташкента</a></li>
+                    <li><a class="dropdown-item color-white hover-gold bg-black" href="../hotels/tashkent.html">Гостиница
+                        Самарканда</a></li>
+                    <li><a class="dropdown-item color-white hover-gold bg-black" href="../hotels/tashkent.html">Гостиница
+                        Бухары</a></li>
+                </ul>
+            </div>
+            <a href="../cars/index.html" class="br-r text-14 color-white">Транспорт</a>
+            <a href="../blog/index.html" class="br-r text-14 color-white">Блог</a>
+            <a href="../gallery/index.html" class="br-r text-14 color-white">Галерея</a>
+            <a href="../about/index.html" class="br-r text-14 color-white">О нас</a>
         </div>
     </div>
 </header>
 <main>
     <div class="attr-bg mb-3 w-100" style="background-image: url(../img/tashkent2.jpg)">
-        <span class="container h2 d-block text-center color-white">Достопримечательности Ташкента</span>
+        <div class="w-100 h-100 d-flex align-items-center" style="background-color: rgba(0,0,0,0.31)">
+            <span class="container h2 d-block text-center color-white">Достопримечательности Ташкента</span>
+        </div>
     </div>
     <section class="bread-crumb mb-4">
         <div class="container">

@@ -36,6 +36,22 @@ $(function () {
         },
     });
 
+    $('.c-list').click(function () {
+        const value = $(this).attr('data-filter');
+        if (value == 'all') {
+            $('.itemBox').show(500);
+        }
+        else {
+            $('.itemBox').not('.'+value).hide(500);
+            $('.itemBox').filter('.'+value).show(500);
+        }
+    });
+    $('.c-list').click(function () {
+       $(this).addClass('active').siblings().removeClass('active');
+    });
+
+    $('.c-photo').lightGallery();
+
     $('.menu-btn').on('click', function () {
         $('.menu').slideDown();
         $('body').addClass('active');
